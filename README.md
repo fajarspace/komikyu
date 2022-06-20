@@ -1,8 +1,8 @@
 # Mangaku
-Suka baca manga? sebal dengan iklan yang muncul terus-terusan? coba buka [manganya.bykevin.work](https://manganya.bykevin.work/) no iklan-iklan club.
+Suka baca manga? sebal dengan iklan yang muncul terus-terusan? coba Santoryu Manga
 
 ## How to run it locally?
-1. `git clone https://github.com/vnxx/mangaku.git`.
+1. `git clone https://github.com/fajaragngn/santoryu-app.git`.
 2. `cd mangaku`.
 3. `npm install`.
 4. `npm run dev` - If you want to update the UI.
@@ -17,7 +17,7 @@ A couples days back, when I heard hataraku maou-sama will get next season (seaso
 ## Why don't I read the legal manga instead?
 The answer is because I don't know where to go. this is the ironic thing about this industry (Movies, comics, etc). that it's easier to access the illegal stuff than the legal stuff. if you type on google "Hataraku Maou-sama chapter 82" or anything else when you see the result, what kind of sites you get? the legal or illegal? even though you can find the legal sites how about the <b>payment method?</b>
 
-I'm using Netflix I paid for it each month, I have access to the payment method (debit card), why do I use Netflix instead of the illegal sites? not because Netflix is a is legal site, but it's more like the benefit of using Netflix. if you ask me which one is easier to access I would answer Netflix and the features it's helpful. 
+I'm using Netflix I paid for it each month, I have access to the payment method (debit card), why do I use Netflix instead of the illegal sites? not because Netflix is a is legal site, but it's more like the benefit of using Netflix. if you ask me which one is easier to access I would answer Netflix and the features it's helpful.
 
 There are three kinds of customers: price-oriented customer, value-oriented customer, and product-oriented consumer. maybe now I'm a value-oriented customer. if the value of the illegal site is more than the legal site, probably I would choose the illegal site because the legal site can't provide my needs.
 
