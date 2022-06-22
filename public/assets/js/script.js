@@ -28,7 +28,7 @@ $('#mangas').on('click', '.see-detail', function () {
     $('.modal-title').text('');
     $('.modal-body').html(`
         <div class="text-center">
-            <b>Please Wait!!!</b>
+            <b>Chotto Mattee</b>
             <br>
             <img src="/assets/image/menhera.gif" class="rounded">
         </div>
@@ -244,7 +244,7 @@ function generateChapterList(array) {
         temp.push(`
             <tr>
                 <td>${a.name ? a.name : a.title}</td>
-                <td><a href="/${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" ><button type="button" class="btn btn-dark btn-sm btn-block">Baca Komik</button></a></td>
+                <td><a href="/${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" ><button type="button" class="btn btn-dark btn-sm btn-block">Baca</button></a></td>
                 <td><a href="/${firstPath}/download/${a.link.endpoint ? a.link.endpoint : a.endpoint}pdf"><button type="button" class="btn btn-dark btn-sm btn-block"><i class="fa fa-download"></i></button></a></td>
             </tr>
         `);
