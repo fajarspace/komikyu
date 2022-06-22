@@ -3,7 +3,7 @@ Suka baca manga? sebal dengan iklan yang muncul terus-terusan? coba Santoryu Man
 
 ## How to run it locally?
 1. `git clone https://github.com/fajaragngn/santoryu-app.git`.
-2. `cd mangaku`.
+2. `cd santoryu`.
 3. `npm install`.
 4. `npm run dev` - If you want to update the UI.
 5. `php -S localhost:8000 -t public/`. Open localhost:8000 instead of localhost:5000 to get the API data, don't worry the hot reload feautre still works.
