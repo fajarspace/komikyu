@@ -1,7 +1,7 @@
 <%- include('../../layout/header') %>
-    <script>
-        document.title = 'Komikindo • Home';
-    </script>
+
+<main class="" >
+
     <div class="row mt-4 justify-content-center">
         <div class="col">
             <h1 class="text-center">Home</h1>
@@ -15,48 +15,46 @@
         </div>
     </div>
 
-    <h3 class="text-center"> Popular Mangas </h3>
-    <hr>
-    <div id="manga-list" class="row">
-        <% body.recent_popular.forEach(a=> { %>
-            <div class="col-md-3">
-                <div class="card mb-3" style="width: auto;">
-                    <img src="<%= a.thumb %>" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">
-                            <%= a.name %>
-                        </h5>
-                        <a class="btn btn-dark btn-sm btn-block see-detail" href="#" data-toggle="modal"
-                            data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-                            data-target="#exampleModal">Detail</a>
-                    </div>
-                </div>
+    <h3>Popular</h3>
+    <div class="produk-list">
+      <% body.recent_popular.forEach(a=> { %>
+    <div class="produk-box">
+      <a class="see-detail" href="#" data-toggle="modal"
+          data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+          data-target="#exampleModal">
+          <div>
+            <img src="<%= a.thumb %>" >
+            <div class="ket">
+              <h2><%= a.name %></h2>
+              <h3></h3>
             </div>
-            <% }) %>
+          </div>
+        </a>
+    </div>
+    <% }) %>
     </div>
 
-    <h3 class="text-center"> Newest Manga </h3>
-    <hr>
-    <div id="manga-list" class="row">
-        <% body.new_update.forEach(a=> { %>
-            <div class="col-md-3">
-                <div class="card mb-3" style="width: auto;">
-                    <img src="<%= a.thumb %>" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">
-                            <%= a.name %>
-                        </h5>
-                        <a class="btn btn-dark btn-sm btn-block see-detail" href="#" data-toggle="modal"
-                            data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-                            data-target="#exampleModal">Detail</a>
-                    </div>
-                </div>
+    <h3>Baru Rilis</h3>
+    <div class="produk-list">
+      <% body.new_update.forEach(a=> { %>
+    <div class="produk-box">
+      <a class="see-detail" href="#" data-toggle="modal"
+          data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+          data-target="#exampleModal">
+          <div>
+            <img src="<%= a.thumb %>" >
+            <div class="ket">
+              <h2><%= a.name %></h2>
+              <h3></h3>
             </div>
-            <% }) %>
+          </div>
+        </a>
+    </div>
+    <% }) %>
     </div>
 
     <br>
     <hr>
-
+</main>
 
     <%- include('../../layout/footer') %>
