@@ -2,19 +2,6 @@
 
 <main class="" >
 
-    <div class="row mt-4 justify-content-center">
-        <div class="col">
-            <h1 class="text-center">Home</h1>
-            <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Title...." id="search-input">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-dark" type="button" onClick="getSearch('id')">Search</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
     <h3>Popular</h3>
     <div class="produk-list">
       <% body.recent_popular.forEach(a=> { %>
@@ -57,4 +44,4 @@
     <hr>
 </main>
 
-    <%- include('../../layout/footer') %>
+<%- include('../../layout/footer') %>
