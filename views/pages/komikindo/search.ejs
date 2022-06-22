@@ -2,8 +2,7 @@
     <div class="row" id="manga-list">
         <div class="col-md-12">
             <hr>
-            <h2 class="text-center"> Hasil Pencarian: </h3>
-                <hr>
+            <h2 class="text-center"> Hasil Pencarian: </h2>
         </div>
 
         <% manga.forEach(a=> { %>
@@ -36,13 +35,14 @@
                                                 href="/id/cari/<%=a.endpoint %>">
                                                 <%= a.name %>
                                             </a></li>
-                                        <% } else { %>
-                                            <li class='page-item'><a class='page-link text-dark'
-                                                    href='/id/cari/<%= a.endpoint %>page/1'>
-                                                    <%= a.name %>
-                                                </a></li>
-                                            <% } %>
-                                                <% }) %>
+                                    <% } else { %>
+                                        <li class='page-item'><a class='page-link text-dark'
+                                                href='/id/cari/<%= a.endpoint %>page/1'>
+                                                <%= a.name %>
+                                            </a>
+                                        </li>
+                                    <% } %>
+                                    <% }) %>
                         </ul>
                     </nav>
                     <hr>

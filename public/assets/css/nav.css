@@ -29,7 +29,7 @@ nav{
     height: 50px;
 }
 .nav-formsearch .form input{
-    width: 25vw;
+    width: 45vw;
     height: 40px;
     border-radius: 100px;
     outline: none;
@@ -37,7 +37,6 @@ nav{
     border: 2px solid #E88D2F;
     font-family: 'Quicksand', sans-serif;
     position: relative;
-    left: 50px;
     background: transparent;
 }
 .nav-formsearch .form button{
