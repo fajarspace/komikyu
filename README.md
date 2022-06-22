@@ -1,8 +1,5 @@
 # Manga Reader
 
-Manga Reader with many sources (Komikindo, Mangabat) 
-
-
 ## Rest-API Installation
 1. Require Node.js 14.x.x;
 2. type **npm install** on terminal;
