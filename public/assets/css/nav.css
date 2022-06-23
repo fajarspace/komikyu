@@ -71,10 +71,12 @@ nav{
     align-items: center;
 }
 a.logonav{
-  font-size: 1.8em
+  font-size: 1.8em;
+  text-decoration: none;
 }
 a.logonav1{
-  font-size: 1.8em
+  font-size: 1.8em;
+  text-decoration: none;
 }
 .logo div img{
     width: 100px;
