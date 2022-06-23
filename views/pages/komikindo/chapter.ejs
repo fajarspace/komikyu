@@ -1,19 +1,17 @@
 <%- include('../../layout/header') %>
-    <hr>
+
     <div class="row mt-4 justify-content-center">
         <h2 class="text-justify">
             <%= chapter_name %>
         </h2>
     </div>
-    <hr>
-
     <script>
         document.title = "<%= chapter_name %>";
     </script>
 
-    <div class="row mt-4">
+    <div class="row">
         <div class="col-sm-12">
-            <div class="row flex justify-content-center">
+            <div class="row flex justify-content-right">
                 <div class="btn-group btn-group-toggle btn-group-lg btn-block">
                     <% if (chapter.previous !=null) { %>
                         <a href='/id/chapter<%=chapter.previous%>' class='btn btn-outline-secondary'>Previous</a>
@@ -60,4 +58,13 @@
         </div>
     </div>
 
-    <%- include('../../layout/footer') %>
+
+    <br/>
+
+    <button type="button" class="btn btn-dark btn-floating btn-sm-4 fixed-bottom" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+    </button>
+
+    </div>
+      </body>
+      </html>
