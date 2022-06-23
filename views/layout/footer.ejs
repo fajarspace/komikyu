@@ -39,6 +39,16 @@
       <div class="">
               <ul>
                 <li style="text-align:center;" >
+                  <p>
+                  <div id=theme>
+                      <div onclick=setDarkMode(true) id=darkBtn>
+                          <i class="fa-solid fa-moon"></i> Dark mode
+                      </div>
+                      <div onclick=setDarkMode(false) id=lightBtn class=is-hidden>
+                          <i class="fa-solid fa-sun"></i> Light mode
+                      </div>
+                  </div>
+                  </p>
                   <p><a style="text-decoration:underline; " href="#">Traktir saya kopi ☕️</a></p>
                   <p class="mb-0">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Santoryu</p>
                 </li>
@@ -67,6 +77,7 @@ input.addEventListener("keypress", function(event) {
 <script src="/assets/js/script.js"></script>
 <script src="/assets/js/util.js"></script>
 <script src="/assets/js/dark_mode.js"></script>
+
 
 </body>
 
