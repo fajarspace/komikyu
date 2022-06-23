@@ -56,17 +56,7 @@ ul{
 }
 
 /* Produk list */
-.container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    position: relative;
-    max-width: 1000px;
-    min-height: 600px;
-    gap: 20px;
-    margin: 90px auto 30px auto;
-}
+
 .header-produk{
     position: relative;
     margin: 0 auto;

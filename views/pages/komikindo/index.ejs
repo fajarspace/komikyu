@@ -1,24 +1,9 @@
 <%- include('../../layout/header') %>
 
-    <h3>Popular</h3>
-    <div class="produk-list">
-      <% body.recent_popular.forEach(a=> { %>
-    <div class="produk-box">
-      <a class="see-detail" href="#" data-toggle="modal"
-          data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-          data-target="#exampleModal">
-          <div>
-            <img src="<%= a.thumb %>" >
-            <div class="ket">
-              <h2><%= a.name %></h2>
-              <h3></h3>
-            </div>
-          </div>
-        </a>
-    </div>
-    <% }) %>
-    </div>
+<main class="container-cart">
 
+<div class="wrapper-cart">
+  <div class="product-cart">
     <h3>Baru Rilis</h3>
     <div class="produk-list">
       <% body.new_update.forEach(a=> { %>
@@ -37,5 +22,31 @@
     </div>
     <% }) %>
     </div>
+
+  </div>
+</div>
+
+<div class="total-cart shadow">
+    <h2 class="title">Populer</h2>
+    <% body.recent_popular.forEach(a=> { %>
+    <div class="">
+        <ul>
+          <li>
+            <a class="see-detail" href="#" data-toggle="modal"
+              data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+              data-target="#exampleModal">
+            <img width="50px" src="<%= a.thumb %>" alt="">
+            <%= a.name %>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <% }) %>
+</div>
+
+
+</main>
+
+
 
 <%- include('../../layout/footer') %>
