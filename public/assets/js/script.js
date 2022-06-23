@@ -25,12 +25,11 @@ function getSearch(source) {
 
 
 $('#mangas').on('click', '.see-detail', function () {
-    $('.modal-title').text('');
+    $('.modal-title').text('Sedang memuat..');
     $('.modal-body').html(`
         <div class="text-center">
-            <b>Chotto Mattee</b>
             <br>
-            <img src="/assets/image/menhera.gif" class="rounded">
+            <img src="https://data.whicdn.com/images/92353047/original.gif" class="rounded">
         </div>
     `);
 
