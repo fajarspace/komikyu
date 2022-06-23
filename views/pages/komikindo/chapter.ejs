@@ -16,18 +16,18 @@
 
 
     <div class="row">
-        <div class="col-sm-12">
-            <div class="row flex justify-content-right">
+        <div class="col">
+            <div class="row flex justify-content-center">
                 <div class="btn-group btn-group-toggle btn-group-lg btn-block">
                     <% if (chapter.previous !=null) { %>
-                        <a href='/id/chapter<%=chapter.previous%>' class='btn btn-outline-secondary'>Previous</a>
+                        <a href='/id/chapter<%=chapter.previous%>' class='btn btn-secondary'>Previous</a>
                     <% } else { %>
                         <a href='#' class='btn btn-outline-secondary disabled'>Previous</a>
                     <%}%>
-
+                    &emsp; &emsp;
                     <% if (chapter.next !=null) { %>
                         <a href='/id/chapter<%=chapter.next%>'
-                            class='btn btn-outline-secondary'>Next</a>
+                            class='btn btn-secondary'>Next</a>
                     <% } else { %>
                         <a href='#' class='btn btn-outline-secondary disabled'>Next</a>
                     <%}%>
@@ -44,18 +44,18 @@
     </div>
 
     <div class="row mt-4">
-        <div class="col-sm-12">
+        <div class="col">
             <div class="row flex justify-content-center">
                 <div class="btn-group btn-group-toggle btn-group-lg btn-block">
                     <% if (chapter.previous !=null) { %>
-                        <a href='/id/chapter<%=chapter.previous%>' class='btn btn-outline-secondary'>Previous</a>
+                        <a href='/id/chapter<%=chapter.previous%>' class='btn btn-secondary'>Previous</a>
                     <% } else { %>
                         <a href='#' class='btn btn-outline-secondary disabled'>Previous</a>
                     <%}%>
-
+                    &emsp; &emsp;
                     <% if (chapter.next !=null) { %>
                         <a href='/id/chapter<%=chapter.next%>'
-                            class='btn btn-outline-secondary'>Next</a>
+                            class='btn btn-secondary'>Next</a>
                     <% } else { %>
                         <a href='#' class='btn btn-outline-secondary disabled'>Next</a>
                     <%}%>
