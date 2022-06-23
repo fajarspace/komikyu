@@ -17,21 +17,31 @@ body.darkmode a{
   cursor: pointer;
 }
 
+.darkmode .modal-title,
+.darkmode .modal-body,
+.darkmode .modal-header{
+  color: rgb(227, 227, 227);
+  background: #393939;
+}
 .darkmode .container-fluid {
   color: rgb(227, 227, 227);
   background: #393939;
 }
 .darkmode .container-fluid ul li {
-  border: 1px solid white;
+  border: 1px solid grey;
   color: rgb(227, 227, 227);
   background: #393939;
 }
-.darkmode .container-fluid .row {
+.darkmode .container-fluid .row table tbody {
   color: rgb(227, 227, 227);
+  border: 1px solid grey;
 }
 .darkmode .container-fluid ul li {
   color: rgb(227, 227, 227);
   background: #393939;
+}
+.darkmode button.close {
+  color: rgb(227, 227, 227);
 }
 
 .darkmode nav{
