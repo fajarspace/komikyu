@@ -23,6 +23,7 @@ footer{
     gap: 20px;
     align-items: center;
     padding: 0 50px;
+    margin: 15px auto;
 }
 .footer-section h3{
     font-family: 'Quicksand', sans-serif;
@@ -31,7 +32,7 @@ footer{
 }
 
 .footer-section div{
-    background: #E88D2F;
+    background: #0181ff;
     color: #ffffff;
     width: 40px;
     height: 40px;

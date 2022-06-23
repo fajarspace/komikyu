@@ -182,14 +182,14 @@ body.darkmode a{
 .darkmode .footer-section h3{
 	color: white
 }
-.darkmode .footer-section div{
+/*.darkmode .footer-section div{
     background: #A91079;
 }
 .darkmode .footer-section div:hover {
     color: #A91079;
     background-color: #282828;
     box-shadow: 0 0 5px #282828;
-}
+}*/
 .darkmode .footer-section:nth-last-child(1){
     background: #A91079;
     color: #fff;

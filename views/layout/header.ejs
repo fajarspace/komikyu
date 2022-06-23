@@ -19,22 +19,6 @@
     <link rel="stylesheet" href="/assets/css/cart.css">
     <link rel="stylesheet" href="/assets/css/return_to_top.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        var previous = null;
-        var current = null;
-        setInterval(function() {
-            $.getJSON("data.json", function(json) {
-                current = JSON.stringify(json);
-                if (previous && current && previous !== current) {
-                    console.log('refresh');
-                    location.reload();
-                }
-                previous = current;
-            });
-        }, 2000);
-    </script>
-
-    </script>
 
     <title>Santoryu - Baca Manga/Manhwa Indonesia</title>
 </head>
@@ -44,18 +28,10 @@
   <nav>
       <ul class="nav-container">
           <li class="logo">
-              <a class="logonav1" href="/"><img src="/assets/image/komiku.png" alt="logo" width="60"> | </a>
+              <a class="logonav1" href="/"><img src="/assets/image/santoryu.png" alt="logo" width="60"> | </a>
               <a class="logonav" href="/">SANTORYU</a>
           </li>
-          <li class="nav-formsearch">
-              <div class="search">
-                 <input type="text" id="search-input" class="searchTerm" placeholder="Cari..">
-                 <button onClick="getSearch('id')" id="myButton" type="submit" class="searchButton">
-                   <i class="fa fa-search"></i>
-                </button>
-              </div>
 
-          </li>
 
           <li>
               <div id=theme>
@@ -65,6 +41,14 @@
                   <div onclick=setDarkMode(false) id=lightBtn class=is-hidden>
                       <i class="fa-solid fa-sun"></i>
                   </div>
+              </div>
+          </li>
+          <li class="nav-formsearch">
+              <div class="search">
+                 <input type="text" id="search-input" class="searchTerm" placeholder="Cari..">
+                 <button onClick="getSearch('id')" id="myButton" type="submit" class="searchButton">
+                   <i class="fa fa-search"></i>
+                </button>
               </div>
           </li>
       </ul>
