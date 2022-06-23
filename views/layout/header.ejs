@@ -18,7 +18,21 @@
     <link rel="stylesheet" href="/assets/css/dark_mode.css">
     <link rel="stylesheet" href="/assets/css/cart.css">
     <link rel="stylesheet" href="/assets/css/return_to_top.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        var previous = null;
+        var current = null;
+        setInterval(function() {
+            $.getJSON("data.json", function(json) {
+                current = JSON.stringify(json);
+                if (previous && current && previous !== current) {
+                    console.log('refresh');
+                    location.reload();
+                }
+                previous = current;
+            });
+        }, 2000);
+    </script>
 
     </script>
 
