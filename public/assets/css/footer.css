@@ -48,6 +48,7 @@ footer{
     justify-content: space-around;
     background: #E88D2F;
     color: #ffffff;
+    height: auto;
 }
 
 .footer-col{

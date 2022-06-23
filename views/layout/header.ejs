@@ -28,14 +28,17 @@
   <nav>
       <ul class="nav-container">
           <li class="logo">
-              <a href="/"><img src="" alt="logo" width="100"></a>
-
+              <a class="logonav1" href="/"><img src="./assets/image/komiku.png" alt="logo" width="60"> | </a>
+              <a class="logonav" href="/">SANTORYU</a>
           </li>
           <li class="nav-formsearch">
-              <div class="form" >
-                  <input id="search-input" type="text" name="q" placeholder="Cari Hent..">
-                  <button onClick="getSearch('id')" type="submit" name="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <div class="search">
+                 <input type="text" id="search-input" class="searchTerm" placeholder="Cari..">
+                 <button onClick="getSearch('id')" id="myBtn" type="submit" class="searchButton">
+                   <i class="fa fa-search"></i>
+                </button>
               </div>
+
           </li>
 
           <li>
