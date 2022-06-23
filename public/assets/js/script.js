@@ -86,101 +86,7 @@ $('#mangas').on('click', '.see-detail', function () {
             });
             break;
 
-        case 'mangabat':
-            $.getJSON(`${domain}/api/mangabat/comic/${$(this).data('endpoint')}`, function (result) {
-                const data = result.data;
 
-                $('.modal-title').text(`${data.title ? data.title : 'Invalid Name'}`);
-
-                let isScroll = '';
-                if (data.chapters.length > 7) isScroll = `style="overflow-y: scroll; height:400px;"`;
-                $('.modal-body').html(`
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="${data.thumb}" class="img-fluid" alt="...">
-                            </div>
-
-                            <div class="col-md-8">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><b>Alternatif:</b> ${data.alter.length > 1 ? data.alter.join(', ') : data.alter}</li>
-                                    <li class="list-group-item"><b>Status:</b> ${data.status}</li>
-                                    <li class="list-group-item"><b>Author:</b> ${data.author.map(a => `<a href="${a.link}">${a.name}</a>`).join(', ')}</li>
-                                    <li class="list-group-item"><b>Genre:</b> ${data.genre.map(a => `<a href="${a.url}">${a.name}</a>`).join(', ')}</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <p>${data.synopsis}</p>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <div class="row">
-                            <div class="col-sm-12" ${isScroll}">
-                                <table class="table table-striped table-bordered table-paginate" cellspacing="0">
-                                    <tbody>
-                                        ${generateChapterList(data.chapters).join('\n')}
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                    </div>
-                    `);
-            });
-            break;
-
-        case 'otakudesu':
-            const otkdsEndpoint = $(this).data('endpoint');
-            $.getJSON(`${domain}/api/otakudesu/anime/detail/${otkdsEndpoint.replace('/anime/', '')}`, async function (result) {
-                const data = result.data;
-
-                const filterEps = data.eps.filter(a => a.type == 'List')[0].data;
-                $('.modal-title').text(`${data.title}`);
-                $('.modal-body').html(`
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="${data.thumb}" class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <ul class="list-group">
-                                <li class="list-group-item"><b>Japanese:</b> ${data.japanese}</li>
-                                <li class="list-group-item"><b>Skor:</b> ⭐${data.skor}</li>
-                                <li class="list-group-item"><b>Producer:</b> ${data.producer}</li>
-                                <li class="list-group-item"><b>Type:</b> ${data.type}</li>
-                                <li class="list-group-item"><b>Genre:</b> ${data.genre}</li>
-                                <li class="list-group-item"><b>Status:</b> ${data.status}</li>
-                                <li class="list-group-item"><b>Episodes:</b> ${data.episodes}</li>
-                            </ul>
-                        </div>
-                    </div>
-                <hr>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p>${data.sinopsis.join('\n')}</p>
-                        </div>
-                    </div>
-                <hr>
-                    <div class="row">
-                        <div class="col-sm-12" style="overflow-y: scroll; height:400px;">
-                            <table class="table table-striped table-bordered table-paginate" cellspacing="0">
-                                <tbody>
-                                    ${generateEpsList(filterEps).join('\n')}
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                `);
-            });
-            break;
 
         case 'komiku':
             const komikuEndpoint = $(this).data('endpoint');
@@ -244,8 +150,8 @@ function generateChapterList(array) {
         temp.push(`
             <tr>
                 <td>${a.name ? a.name : a.title}</td>
-                <td><a href="/${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" ><button type="button" class="btn btn-dark btn-sm btn-block">Baca</button></a></td>
-                <td><a href="/${firstPath}/download/${a.link.endpoint ? a.link.endpoint : a.endpoint}pdf"><button type="button" class="btn btn-dark btn-sm btn-block"><i class="fa fa-download"></i></button></a></td>
+                <td><a href="/${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" ><button type="button" class="btn btn-info btn-sm btn-block">Baca</button></a></td>
+                <td><a href="/${firstPath}/download/${a.link.endpoint ? a.link.endpoint : a.endpoint}pdf"><button type="button" class="btn btn-success btn-sm btn-block"><i class="fa fa-download"></i></button></a></td>
             </tr>
         `);
     });
@@ -253,19 +159,6 @@ function generateChapterList(array) {
     return temp;
 };
 
-function generateEpsList(array) {
-    const temp = [];
-    array.forEach(function (a, i) {
-        temp.push(`
-            <tr>
-                <td>${a.title}</td>
-                <td><a href="/otakudesu/eps${a.endpoint}" target="_blank"><button type="button" class="btn btn-dark btn-sm btn-block">Nonton Anime</button></a></td>
-            </tr>
-        `);
-    });
-
-    return temp;
-}
 
 /* Add Favorite */
 $('.favorite').on('click', async function () {

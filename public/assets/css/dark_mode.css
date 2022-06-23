@@ -17,6 +17,23 @@ body.darkmode a{
   cursor: pointer;
 }
 
+.darkmode .container-fluid {
+  color: rgb(227, 227, 227);
+  background: #393939;
+}
+.darkmode .container-fluid ul li {
+  border: 1px solid white;
+  color: rgb(227, 227, 227);
+  background: #393939;
+}
+.darkmode .container-fluid .row {
+  color: rgb(227, 227, 227);
+}
+.darkmode .container-fluid ul li {
+  color: rgb(227, 227, 227);
+  background: #393939;
+}
+
 .darkmode nav{
 	background: rgb(57, 57, 57);
 	box-shadow: 0 0 5px #282828;
