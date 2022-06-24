@@ -1,0 +1,24 @@
+
+<!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <% body.colored_komik.forEach(a=> { %>
+        <div class="swiper-slide">
+          <a class="see-detail" href="#" data-toggle="modal"
+              data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+              data-target="#exampleModal">
+              <div>
+                <img width="30%" src="<%= a.thumb %>" >
+                <div class="ket">
+                  <h2 class="title" ><%= a.name %></h2>
+                </div>
+              </div>
+            </a>
+        </div>
+        <% }) %>
+      </div>
+      <br>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
