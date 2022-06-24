@@ -18,7 +18,7 @@ body{
   width: 100%;
   border: 3px solid #0181ff;
   border-right: none;
-  padding: 5px;
+  padding: 16px;
   height: 36px;
   border-radius: 5px 0 0 5px;
   outline: none;
@@ -30,8 +30,8 @@ body{
 }
 
 .searchButton {
-  width: 40px;
-  height: 36px;
+  width: 50px;
+  height: 38px;
   border: 1px solid #0181ff;
   background: #0181ff;
   text-align: center;
@@ -41,14 +41,6 @@ body{
   font-size: 20px;
 }
 
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 /* Navbar */
 nav{
