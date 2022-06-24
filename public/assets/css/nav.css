@@ -8,6 +8,11 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+.line{
+  border-left: 3px solid lightgrey;
+  height: 50px;
+}
+
 .search {
   width: 100%;
   position: relative;
@@ -16,7 +21,7 @@ body{
 
 .searchTerm {
   width: 100%;
-  border: 2px solid #0181ff;
+  border: 2px solid #0A4275;
   border-right: none;
   padding: 16px;
   height: 36px;
@@ -32,8 +37,8 @@ body{
 .searchButton {
   width: 50px;
   height: 36px;
-  border: 1px solid #0181ff;
-  background: #07355E;
+  border: 1px solid #0A4275;
+  background: #0A4275;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -62,7 +67,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-a.logonav{
+.logonav{
   font-size: 1.8em;
   text-decoration: none;
 }
@@ -195,7 +200,7 @@ a.logonav1{
 }
 
 @media only screen and (max-width: 768px){
-    a.logonav{
+    .logonav{
       display: none;
     }
     .nav-container{
