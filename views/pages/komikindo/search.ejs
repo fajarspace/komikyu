@@ -2,26 +2,24 @@
 
 
 <div class="row" id="manga-list">
-  <div class="col-md-12">
-<br>
-      <h2 class="text-center"> Result : </h2>
-  </div>
+
 
   <div class="wrapper-cart">
     <div class="product-cart">
+      <br>
+      <h3 class="title">Result :</h3>
       <div class="produk-list">
         <% manga.forEach(a=> { %>
       <div class="produk-box">
         <a class="see-detail" href="#" data-toggle="modal"
-            data-source="komikindo" data-endpoint="<%= a.link.endpoint %>"
+            data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
             data-target="#exampleModal">
             <div>
               <img src="<%= a.thumb %>" >
               <div class="ket">
                 <h2><%= a.title %></h2>
-                <h3><%= a.description %></h3>
+               <center><button style="width:100%;" class="btn align-center btn-primary">Detail</button></center>
               </div>
-              <center><button style="width:100%;" class="btn align-center btn-info">Detail</button></center>
             </div>
           </a>
       </div>
@@ -29,6 +27,23 @@
       </div>
 
     </div>
+  </div>
+<div class="hidden-new">
+  <div class="total-cart">
+      <h2 class="title">Result :</h2>
+        <% manga.forEach(a=> { %>
+          <ul>
+            <li>
+              <a class="see-detail" href="#" data-toggle="modal"
+                data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+                data-target="#exampleModal">
+              <img width="50px" src="<%= a.thumb %>" alt="">
+              <%= a.title %>
+              </a>
+            </li>
+          </ul>
+          <% }) %>
+      </div>
   </div>
 
           <div class="col-md-12">

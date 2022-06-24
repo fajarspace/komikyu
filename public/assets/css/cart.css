@@ -11,10 +11,9 @@
 	padding: 10px 0;
 }
 
-.total-cart .hidden-new ul li{
+.hidden-new{
 	display: none;
 }
-
 
 ul{
     list-style: none;
@@ -302,9 +301,8 @@ div.wrapper-cart div.navigation i {
 	}
 }
 @media screen and (max-width: 430px) {
-	.total-cart .hidden-new ul li{
+	.hidden-new{
 		display: block;
-
 	}
 	.wrapper-cart{
 		display: none;
