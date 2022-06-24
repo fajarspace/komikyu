@@ -1,7 +1,8 @@
 <%- include('../../layout/header') %>
 
 <main class="container-cart">
-
+<!-- DESKTOP -->
+<!-- DESKTOP -->
 <div class="wrapper-cart">
   <div class="product-cart">
     <h3 class="title" >Popular Terbaru</h3>
@@ -49,59 +50,66 @@
     </div>
   </div>
 </div>
+<!-- DESKTOP -->
+<!-- DESKTOP -->
+
+<!-- SIDEBAR -->
+<!-- SIDEBAR -->
+<div>
+  <h2 class="title">Popular</h2>
+  <% sidebar.popular.forEach(a=> { %>
+    <div  class="card-items">
+    <a class="boxes see-detail" href="#" data-toggle="modal"
+      data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+      data-target="#exampleModal">
+      <img width="50px" src="<%= a.thumb %>" alt="">
+         <p>  <%= a.name %> <br> <i class="fa-solid fa-star"></i> <%= a.score %></p>
+      </a>
+      </div>
+    <% }) %>
+</div>
+<!-- SIDEBAR -->
+<!-- SIDEBAR -->
+
 
 <!-- MOBILE -->
-<!-- MOBILE -->
-
+<!-- DESKTOP HIDDEN -->
 <div class="hidden-new">
-  <div class="total-cart shadow">
+  <div>
     <h2 class="title">Popular Terbaru</h2>
-      <% body.recent_popular.forEach(a=> { %>
-      <ul>
-        <li>
-          <a class="see-detail" href="#" data-toggle="modal"
-            data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-            data-target="#exampleModal">
-          <img width="50px" src="<%= a.thumb %>" alt="">
-          <%= a.name %>
-          </a>
-        </li>
-      </ul>
+    <% body.recent_popular.forEach(a=> { %>
+      <div  class="card-items">
+      <a class="boxes see-detail" href="#" data-toggle="modal"
+        data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+        data-target="#exampleModal">
+        <img width="50px" src="<%= a.thumb %>" alt="">
+           <p>  <%= a.name %> <br> <span class="badge badge-primary" >
+             <%= a.last_upload %>
+           </span></p>
+        </a>
+        </div>
       <% }) %>
-      <h2 class="title">Komik Berwarna</h2>
-        <% body.colored_komik.forEach(a=> { %>
-        <ul>
-          <li>
-            <a class="see-detail" href="#" data-toggle="modal"
-              data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-              data-target="#exampleModal">
-            <img width="50px" src="<%= a.thumb %>" alt="">
-            <%= a.name %>
-            </a>
-          </li>
-        </ul>
+      <h2 class="title">Komik Berwarna Terbaru</h2>
+      <% body.colored_komik.forEach(a=> { %>
+        <div  class="card-items">
+        <a class="boxes see-detail" href="#" data-toggle="modal"
+          data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+          data-target="#exampleModal">
+          <img width="50px" src="<%= a.thumb %>" alt="">
+             <p>  <%= a.name %> <br> <span class="badge badge-primary" >
+               <%= a.last_upload %>
+             </span></p>
+          </a>
+          </div>
         <% }) %>
-    </div>
+  </div>
 </div>
+<!-- MOBILE -->
+<!-- MOBILE -->
 
-<div class="total-cart shadow">
-    <h2 class="title">Popular</h2>
-    <div class="">
-      <% sidebar.popular.forEach(a=> { %>
-        <ul>
-          <li>
-            <a class="see-detail" href="#" data-toggle="modal"
-              data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-              data-target="#exampleModal">
-            <img width="50px" src="<%= a.thumb %>" alt="">
-            <p><%= a.name %> <br>
-            ⭐️ <%= a.score %></p>
-            </a>
-          </li>
-        </ul>
-        <% }) %>
-    </div>
-</div>
+
+
+
 
 <!-- MOBILE -->
 <!-- MOBILE -->
@@ -111,7 +119,4 @@
 
 
 
-<div class="wrapper-cart">
-
-</div>
 <%- include('../../layout/footer') %>

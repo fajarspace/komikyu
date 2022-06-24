@@ -1,0 +1,50 @@
+.card-items{
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    /*box-shadow: 4px 4px 6px #cecece;*/
+    box-shadow: 0 3px 8px 3px lightgrey, 0 6px 20px 0 #EEEEEE;
+}
+.darkmode .card-items {
+  color: rgb(227, 227, 227);
+	background: rgb(57, 57, 57);
+	box-shadow: 0 4px 8px 0 #282828, 0 6px 20px 0 rgb(57, 57, 57);
+}
+.darkmode .card-items > .title{
+	color: rgb(227, 227, 227);
+}
+.boxes {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px
+}
+.body-boxes a{
+  margin: 50px
+}
+.boxes p{
+  font-size: 0.9em;
+  margin: 3%
+}
+
+.boxes:hover {
+	background: #313942
+}
+
+.boxes_active {
+	color: #43A4BD
+}
+
+.boxes_active .arrow-right {
+	border-left-color: #43A4BD
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #fcfcfc
+}

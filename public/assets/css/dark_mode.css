@@ -1,4 +1,8 @@
 
+.darkmode .title {
+    color: rgb(227, 227, 227);
+}
+
 body.darkmode {
     background: rgb(40, 40, 40);
     color: rgb(227, 227, 227);
