@@ -104,7 +104,7 @@ $('#mangas').on('click', '.see-detail', function () {
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="${data.thumb}" class="img-fluid" alt="...">
+                            <img id="new" src="${data.thumb}" class="img-fluid" alt="...">
                         </div>
 
                         <div class="col-md-8">
