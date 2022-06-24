@@ -16,7 +16,7 @@ body{
 
 .searchTerm {
   width: 100%;
-  border: 3px solid #0181ff;
+  border: 2px solid #0181ff;
   border-right: none;
   padding: 16px;
   height: 36px;
@@ -31,9 +31,9 @@ body{
 
 .searchButton {
   width: 50px;
-  height: 38px;
+  height: 36px;
   border: 1px solid #0181ff;
-  background: #0181ff;
+  background: #07355E;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;

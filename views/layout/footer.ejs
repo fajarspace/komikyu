@@ -16,46 +16,43 @@
     </div>
 </div>
 
-<!-- Footer -->
-<footer>
-  <div class="footer-section">
-    <a class="logonav1" href="/"><img src="/assets/image/santoryu.png" alt="logo" width="60"></a>
-    <a class="logonav1" href="/">| SANTORYU</a>
-  </div>
-      <!--div class="footer-section">
-          <h3>Ikuti kami :</h3>
+<section class="">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <a class="logonav1" href="/"><img src="/assets/image/santoryu.png" alt="logo" width="60"></a>
+          <a style="color:white;" href="/">&nbsp; SANTORYU</a>
+        </p>
+        <p>
+        <div id=theme>
+            <div onclick=setDarkMode(true) id=darkBtn>
+                <i class="fa-solid fa-moon"></i> Dark mode
+            </div>
+            <div onclick=setDarkMode(false) id=lightBtn class=is-hidden>
+                <i class="fa-solid fa-sun"></i> Light mode
+            </div>
+        </div>
+        </p>
+        <p>
+          <a style="text-decoration:underline; color:white; " href="#">Traktir saya kopi ☕️</a>
+        </p>
+      </section>
+      <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
 
-            <a href="" target="_blank" title="">
-              <div><i class="fab fa-facebook"></i></div>
-            </a>
-            <a href="" target="_blank" title="">
-              <div><i class="fab fa-twitter"></i></div>
-            </a>
-            <a href="" target="_blank" title="">
-              <div><i class="fab fa-instagram"></i></div>
-            </a>
-      </div-->
-
-      <div class="">
-              <ul>
-                <li style="text-align:center;" >
-                  <p>
-                  <div id=theme>
-                      <div onclick=setDarkMode(true) id=darkBtn>
-                          <i class="fa-solid fa-moon"></i> Dark mode
-                      </div>
-                      <div onclick=setDarkMode(false) id=lightBtn class=is-hidden>
-                          <i class="fa-solid fa-sun"></i> Light mode
-                      </div>
-                  </div>
-                  </p>
-                  <p><a style="text-decoration:underline; " href="#">Traktir saya kopi ☕️</a></p>
-                  <p class="mb-0">Copyright &copy; <script>document.write(new Date().getFullYear());</script> Santoryu</p>
-                </li>
-              </ul>
-      </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Copyright &copy; <script>document.write(new Date().getFullYear());</script> Santoryu
+    </div>
+    <!-- Copyright -->
   </footer>
-<!-- Footer -->
+  <!-- Footer -->
+</section>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script>
