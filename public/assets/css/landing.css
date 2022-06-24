@@ -97,8 +97,8 @@ ul{
 .produk-box{
     margin: 10px;
     display: flex;
-    width: 200px;
-    height: 320px;
+    width: 150px;
+    height: 260px;
     background-color: #fff;
     border-radius: 8px;
     /*box-shadow: 4px 4px 6px #cecece;*/
@@ -114,8 +114,8 @@ ul{
     border-radius: 10px;
 }
 .produk-box a div img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 8px 8px 0 0;
     background-color: #a4a4a4;
 }
