@@ -19,9 +19,12 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 10px
+	padding: 5px
 }
-
+.card-items img{
+	width: 70px;
+  border-radius: 5px
+}
 .boxes p{
   font-size: 0.9em;
   margin: 3%

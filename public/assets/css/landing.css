@@ -58,18 +58,6 @@ ul{
     list-style: none;
 }
 
-/* Produk list */
-
-.header-produk{
-    position: relative;
-    margin: 0 auto;
-    width: 200px;
-    height: 30px;
-    border: 1px solid #cecece;
-    border-radius: 20px;
-    text-align: center;
-    padding: 2px;
-}
 .link{
     font-family: 'Quicksand', sans-serif;
     position: relative;
@@ -132,12 +120,7 @@ ul{
     margin-bottom: 8px;
     text-transform: capitalize;
 }
-.produk-box .ket h3 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    color: #000000;
-    margin-bottom: 8px;
-}
+
 .produk-box .ket div {
     display: flex;
     width: 100%;
