@@ -42,6 +42,7 @@ a{
     font-size: 18px;
 }
 a:hover{
+  text-decoration: none;
     color: #000;
 }
 .link a{

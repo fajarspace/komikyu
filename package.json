@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://fajaragngn.github.io/santoryu-app",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,5 +19,12 @@
     "got": "^11.8.3",
     "pdfkit": "^0.13.0",
     "quick.db": "^7.1.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
