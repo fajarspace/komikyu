@@ -1,4 +1,5 @@
-.detail-button{
+.detail-button,
+.detail-button:hover{
   background-color: #0A4275!important;
   color: white;
 }

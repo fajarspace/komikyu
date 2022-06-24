@@ -149,7 +149,7 @@ function generateChapterList(array) {
         temp.push(`
             <tr>
                 <td>${a.name ? a.name : a.title}</td>
-                <td><a href="/${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" ><button type="button" class="btn btn-primary btn-sm btn-block">Baca</button></a></td>
+                <td><a href="/${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" ><button type="button" class="btn detail-button btn-sm btn-block">Baca</button></a></td>
                 <td><a href="/${firstPath}/download/${a.link.endpoint ? a.link.endpoint : a.endpoint}pdf"><button type="button" class="btn btn-success btn-sm btn-block"><i class="fa fa-download"></i></button></a></td>
             </tr>
         `);
