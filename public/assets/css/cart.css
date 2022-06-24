@@ -6,8 +6,7 @@
   position: relative;
 	width: 100%;
 	min-height: 60vh;
-  gap: 5px;
-  margin: 50px auto;
+  margin: 30px auto;
 	padding: 10px 0;
 }
 
@@ -203,7 +202,7 @@ div.wrapper-cart div.navigation i {
 }
 
 
-.total-cart > .title{
+.title{
 	font-size: 20px;
 	color: #222;
 	font-weight: 700;
@@ -292,7 +291,7 @@ div.wrapper-cart div.navigation i {
 		flex-direction: column;
 		min-height: 50vh;
 		gap: 1px;
-		margin: 70px auto;
+		margin: 30px auto;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -308,6 +307,9 @@ div.wrapper-cart div.navigation i {
 		display: none;
 	}
 	.container-cart{
-		margin: 2% auto;
+		margin: 0% auto;
+		width: 100%;
+		margin-top: -25px;
+		margin-bottom: 20px
 	}
 }
