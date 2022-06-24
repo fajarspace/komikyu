@@ -4,9 +4,9 @@
 
 <div class="wrapper-cart">
   <div class="product-cart">
-    <h3 class="title" >New Releases</h3>
+    <h3 class="title" >Popular Terbaru</h3>
     <div class="produk-list">
-      <% body.new_update.forEach(a=> { %>
+      <% body.recent_popular.forEach(a=> { %>
     <div class="produk-box">
       <a class="see-detail" href="#" data-toggle="modal"
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
@@ -15,8 +15,9 @@
             <img id="myFile" src="<%= a.thumb %>" >
             <div class="ket">
               <h2><%= a.name %></h2>
-             <center><button style="width:100%;" class="btn align-center detail-button">Detail</button></center>
-             <h3><%= a.last_upload %></h3>
+              <span class="badge badge-primary" >
+                <%= a.last_upload %>
+              </span>
             </div>
           </div>
         </a>
@@ -24,7 +25,7 @@
     <% }) %>
     </div>
   </div>
-
+<br>
   <div class="product-cart">
     <h3 class="title" >Komik berwarna Terbaru</h3>
     <div class="produk-list">
@@ -37,8 +38,9 @@
             <img id="myFile" src="<%= a.thumb %>" >
             <div class="ket">
               <h2><%= a.name %></h2>
-              <span class="badge badge-primary" ><%= a.last_upload %></span>
-
+              <span class="badge badge-primary" >
+                <%= a.last_upload %>
+              </span>
             </div>
           </div>
         </a>
@@ -53,8 +55,8 @@
 
 <div class="hidden-new">
   <div class="total-cart shadow">
-    <h2 class="title">New Release</h2>
-      <% body.new_update.forEach(a=> { %>
+    <h2 class="title">Popular Terbaru</h2>
+      <% body.recent_popular.forEach(a=> { %>
       <ul>
         <li>
           <a class="see-detail" href="#" data-toggle="modal"
@@ -83,7 +85,7 @@
 </div>
 
 <div class="total-cart shadow">
-    <h2 class="title">Populer</h2>
+    <h2 class="title">Popular</h2>
     <div class="">
       <% sidebar.popular.forEach(a=> { %>
         <ul>
