@@ -35,11 +35,16 @@
 	border-left: 10px solid #fcfcfc
 }
 
+.hidden-search{
+  display: none;
+}
+
 @media screen and (max-width: 430px) {
 	.title{
     margin-top: 40px
   }
   .hidden-search{
+    display: block;
     width: 90%;
     margin: 0% auto;
   }
