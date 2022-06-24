@@ -10,6 +10,12 @@
   margin: 50px auto;
 	padding: 10px 0;
 }
+
+.total-cart .hidden-new ul li{
+	display: none;
+}
+
+
 ul{
     list-style: none;
 }
@@ -292,6 +298,18 @@ div.wrapper-cart div.navigation i {
 }
 @media screen and (max-width: 600px) {
   .container-cart{
-    width: 95vw;
+    width: 90%;
+	}
+}
+@media screen and (max-width: 430px) {
+	.total-cart .hidden-new ul li{
+		display: block;
+
+	}
+	.wrapper-cart{
+		display: none;
+	}
+	.container-cart{
+		margin: 2% auto;
 	}
 }

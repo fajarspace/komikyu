@@ -29,8 +29,8 @@
 
 <div class="total-cart shadow">
     <h2 class="title">Populer</h2>
-    <% body.recent_popular.forEach(a=> { %>
     <div class="">
+      <% body.recent_popular.forEach(a=> { %>
         <ul>
           <li>
             <a class="see-detail" href="#" data-toggle="modal"
@@ -41,9 +41,28 @@
             </a>
           </li>
         </ul>
+        <% }) %>
+
     </div>
-    <% }) %>
+    <h2 class="title">New Release</h2>
+    <div class="hidden-new">
+      <% body.new_update.forEach(a=> { %>
+      <ul>
+        <li>
+          <a class="see-detail" href="#" data-toggle="modal"
+            data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+            data-target="#exampleModal">
+          <img width="50px" src="<%= a.thumb %>" alt="">
+          <%= a.name %>
+          </a>
+        </li>
+      </ul>
+      <% }) %>
+
+    </div>
+
 </div>
+
 
 
 </main>
