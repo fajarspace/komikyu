@@ -185,7 +185,7 @@ div.wrapper-cart div.navigation i {
 */
 .total-cart {
 	margin-top: 40px;
-	width: 500px;
+	width: 400px;
 	height: max-content;
 	background-color: #fff;
 	border-radius: 5px;
@@ -272,10 +272,16 @@ div.wrapper-cart div.navigation i {
     width: 75vw;
 	}
 }
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 434px) {
+	.total-cart{
+		width: 95%;
+	}
 }
-
+@media screen and (max-width: 1000px) {
+	.total-cart{
+		width: 100%;
+	}
+}
 @media screen and (max-width: 1000px) {
   .container-cart{
 		flex-direction: column;
