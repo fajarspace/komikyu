@@ -1,5 +1,5 @@
 .card-items{
-    margin: 10px;
+    margin: 10px auto;
     display: flex;
     width: 100%;
     background-color: #fff;
@@ -21,24 +21,10 @@
 	align-items: center;
 	padding: 10px
 }
-.body-boxes a{
-  margin: 50px
-}
+
 .boxes p{
   font-size: 0.9em;
   margin: 3%
-}
-
-.boxes:hover {
-	background: #313942
-}
-
-.boxes_active {
-	color: #43A4BD
-}
-
-.boxes_active .arrow-right {
-	border-left-color: #43A4BD
 }
 
 .arrow-right {
