@@ -16,7 +16,7 @@
               <img src="<%= a.thumb %>" >
               <div class="ket">
                 <h2><%= a.title %></h2>
-               <center><button style="width:100%;" class="btn align-center btn-primary">Detail</button></center>
+               <center><button style="width:100%;" class="btn align-center detail-button">Detail</button></center>
               </div>
             </div>
           </a>
@@ -26,23 +26,32 @@
 
     </div>
   </div>
-<div class="hidden-new">
-  <div class="total-cart">
-      <h2 class="title">Result :</h2>
-        <% manga.forEach(a=> { %>
-          <ul>
-            <li>
-              <a class="see-detail" href="#" data-toggle="modal"
-                data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-                data-target="#exampleModal">
-              <img width="50px" src="<%= a.thumb %>" alt="">
-              <%= a.title %>
-              </a>
-            </li>
-          </ul>
-          <% }) %>
-      </div>
+
+  <!-- MOBILE -->
+  <!-- DESKTOP HIDDEN -->
+  <div class="hidden-new">
+    <div class="card-items-body" >
+      <h2 class="title">Daftar pencarian :</h2>
+      <% manga.forEach(a=> { %>
+        <div class="card-items">
+        <a class="boxes see-detail" href="#" data-toggle="modal"
+          data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+          data-target="#exampleModal">
+          <img width="50px" src="<%= a.thumb %>" alt="">
+             <p>
+                <%= a.title %> <br>
+              </p>
+          </a>
+        </div>
+        <% }) %>
+    </div>
   </div>
+  <!-- MOBILE -->
+  <!-- MOBILE -->
+
+
+
+
 
 <div class="col-md-12">
   <hr>

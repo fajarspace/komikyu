@@ -63,7 +63,10 @@
       data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
       data-target="#exampleModal">
       <img width="50px" src="<%= a.thumb %>" alt="">
-         <p>  <%= a.name %> <br> <i class="fa-solid fa-star"></i> <%= a.score %></p>
+         <p>
+           <%= a.name %> <br>
+           <i class="fa-solid fa-star"></i> <%= a.score %>
+         </p>
       </a>
       </div>
     <% }) %>
@@ -83,9 +86,12 @@
         data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
         data-target="#exampleModal">
         <img width="50px" src="<%= a.thumb %>" alt="">
-           <p>  <%= a.name %> <br> <span class="badge badge-primary" >
-             <%= a.last_upload %>
-           </span></p>
+           <p>
+              <%= a.name %> <br>
+              <%= a.score %> <br>
+              <span class="badge badge-primary" >
+              <%= a.last_upload %></span>
+            </p>
         </a>
       </div>
       <% }) %>

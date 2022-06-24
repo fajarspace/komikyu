@@ -39,4 +39,8 @@
 	.title{
     margin-top: 40px
   }
+  .hidden-new{
+    width: 90%;
+    margin: 0% auto;
+  }
 }

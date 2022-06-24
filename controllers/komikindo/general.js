@@ -100,7 +100,7 @@ const home = (req, res) => {
                                 endpoint: $(f).find('a').attr('href').replace(baseURL, '')
                             },
                             thumb: $(f).find('img').attr('src').split('?')[0],
-                            score: $(f).find('.loveviews').text().trim()
+                            score: $(f).find('.loveviews').text().trim();
                         });
                     });
                 }
@@ -154,7 +154,8 @@ const komiks = (req, res) => {
                     link: {
                         endpoint: $(m).find('a').attr('href').replace(baseURL, ''),
                         url: $(m).find('a').attr('href')
-                    }
+                    },
+                    score: $(f).find('.loveviews').text().trim()
                 });
             });
 
