@@ -34,3 +34,9 @@
 	border-bottom: 10px solid transparent;
 	border-left: 10px solid #fcfcfc
 }
+
+@media screen and (max-width: 430px) {
+	.title{
+    margin-top: 40px
+  }
+}

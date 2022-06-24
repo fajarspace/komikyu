@@ -75,10 +75,10 @@
 <!-- MOBILE -->
 <!-- DESKTOP HIDDEN -->
 <div class="hidden-new">
-  <div>
+  <div class="card-items-body" >
     <h2 class="title">Popular Terbaru</h2>
     <% body.recent_popular.forEach(a=> { %>
-      <div  class="card-items">
+      <div class="card-items">
       <a class="boxes see-detail" href="#" data-toggle="modal"
         data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
         data-target="#exampleModal">
@@ -87,7 +87,7 @@
              <%= a.last_upload %>
            </span></p>
         </a>
-        </div>
+      </div>
       <% }) %>
       <h2 class="title">Komik Berwarna Terbaru</h2>
       <% body.colored_komik.forEach(a=> { %>
@@ -106,15 +106,6 @@
 </div>
 <!-- MOBILE -->
 <!-- MOBILE -->
-
-
-
-
-
-<!-- MOBILE -->
-<!-- MOBILE -->
-
-
 </main>
 
 
