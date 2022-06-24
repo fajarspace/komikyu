@@ -4,13 +4,13 @@
 
 /* footer */
 footer{
-    position: relative;
+  position: relative;
     display: flex;
     flex-direction: column;
-    bottom: 0;
+    bottom: -140px;
     left: 0;
     right: 0;
-    min-height: 140px;
+    min-height: 280px;
     background-color: #fff;
     box-shadow: 0 5px 8px 0 lightgrey, 0 6px 20px 0 #EEEEEE;
     z-index: 32;
