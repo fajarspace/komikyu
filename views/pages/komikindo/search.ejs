@@ -25,7 +25,14 @@
 
     </div>
   </div>
-
+  <style>
+    .elips {
+      white-space: nowrap;
+      width: 280px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
   <!-- MOBILE -->
   <!-- DESKTOP HIDDEN -->
   <div class="hidden-search">
@@ -37,9 +44,10 @@
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
           data-target="#exampleModal">
           <img src="<%= a.thumb %>" alt="">
-             <p>
-                <%= a.title %> <br>
-              </p>
+
+          <p class="elips" >
+            <%= a.title %>
+          </p>
           </a>
         </div>
         <% }) %>
