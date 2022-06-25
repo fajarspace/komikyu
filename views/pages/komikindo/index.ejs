@@ -1,5 +1,5 @@
 <%- include('../../layout/header') %>
-<%- include('slider') %>
+<%- include('../../layout/slider') %>
 
 <div class="container" id="mangas">
 <!-- Return to Top -->
@@ -14,7 +14,7 @@
   <div class="product-cart">
     <h3 class="title" >Popular Terbaru</h3>
     <div class="produk-list">
-      <% body.recent_popular.forEach(a=> { %>
+      <% komik.forEach.forEach(a=> { %>
     <div class="produk-box">
       <a class="see-detail" href="#" data-toggle="modal"
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
