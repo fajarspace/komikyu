@@ -25,7 +25,6 @@
   width: 100%;
   border-radius: 5px;
   box-shadow: 0 4px 10px 4px #cecece, 0 6px 20px 0 #EEEEEE;
-  background-size: cover;
 }
 .darkmode .swiper-slide img {
   box-shadow: 0 3px 8px 3px rgb(30, 30, 30), 0 6px 20px 0 rgb(40, 40, 40);
