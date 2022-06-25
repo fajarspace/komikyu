@@ -21,11 +21,18 @@
 }
 
 .swiper-slide img {
+  margin-bottom: 10px;
   height: 370px;
-  width: 100%;
+  width: 300px;
   border-radius: 5px;
   box-shadow: 0 4px 10px 4px #cecece, 0 6px 20px 0 #EEEEEE;
 }
 .darkmode .swiper-slide img {
   box-shadow: 0 3px 8px 3px rgb(30, 30, 30), 0 6px 20px 0 rgb(40, 40, 40);
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide img {
+    width: 100%;
+  }
 }
