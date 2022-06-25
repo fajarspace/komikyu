@@ -1,8 +1,11 @@
 .swiper{
   width: 100%;
+
 }
 
 .swiper-slide {
+  height: auto;
+  background-color: #eee;
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -20,6 +23,13 @@
   align-items: center;
 }
 
+.next{
+  margin-right: 10%
+}
+.prev{
+  margin-left: 10%
+}
+
 .swiper-slide img {
   margin-bottom: 10px;
   height: 370px;
@@ -30,8 +40,17 @@
 .darkmode .swiper-slide img {
   box-shadow: 0 3px 8px 3px rgb(30, 30, 30), 0 6px 20px 0 rgb(40, 40, 40);
 }
+.darkmode .swiper-slide {
+  background-color: #393939;
+}
 
 @media screen and (max-width: 768px) {
+  .next{
+    margin-right: 0;
+  }
+  .prev{
+    margin-left: 0;
+  }
   .swiper-slide img {
     width: 100%;
   }
