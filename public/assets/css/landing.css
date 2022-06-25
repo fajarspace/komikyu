@@ -30,27 +30,33 @@
   height: 100%;
   margin: 0;
 }
-.modal .modal-content {
+.modal .container-fluid {
   height: 100%;
   border: 0;
   border-radius: 0;
 
 }
-.modal .modal-body {
+.modal .modal-body .container-fluid {
   overflow-y: auto;
-  width: 90%;
+  width: 100%;
   margin: 5%auto;
 }
 .darkmode .modal .modal-content {
   background: #393939;
 }
-
+.modal .modal-body img.img-li {
+  display: none;
+}
 @media only screen and (max-width: 767px){
-  .modal .modal-body {
-    width:90%;
+
+  .modal .modal-body img.img-fluid {
+    display: none;
   }
-  .modal .modal-body img {
-    display: none
+  .modal .modal-body img.img-li {
+    display: block;
+    width: 100px;
+    margin: 6px;
+
   }
 }
 

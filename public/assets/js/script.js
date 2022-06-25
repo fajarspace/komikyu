@@ -28,7 +28,7 @@ $('#mangas').on('click', '.see-detail', function () {
     $('.modal-title').text('Sedang memuat..');
     $('.modal-body').html(`
         <div class="text-center">
-            <img width="80%" src="https://64.media.tumblr.com/8fee5fca4da6748d6b3c55a506579f8e/tumblr_oktnvzM5OK1sok2l9o2_500.gifv" class="rounded">
+            <img width="300px" src="https://64.media.tumblr.com/8fee5fca4da6748d6b3c55a506579f8e/tumblr_oktnvzM5OK1sok2l9o2_500.gifv" class="rounded">
         </div>
     `);
 
@@ -52,12 +52,28 @@ $('#mangas').on('click', '.see-detail', function () {
                         </div>
                         <div class="col-md-8">
                             <ul class="list-group">
-                                <li class="list-group-item"><b>Alternatif:</b> ${data.alter.length > 1 ? data.alter.join(', ') : data.alter}</li>
-                                <li class="list-group-item"><b>Status:</b> ${data.status}</li>
-                                <li class="list-group-item"><b>Pengarang:</b> ${data.pengarang.map(a => `<a href="${a.link}">${a.name}</a>`).join(', ')}</li>
-                                <li class="list-group-item"><b>Ilustrator:</b> ${data.illustrator.map(a => `<a href="${a.link}">${a.name}</a>`).join(', ')}</li>
-                                <li class="list-group-item"><b>Genre:</b> ${data.genre.map(a => `<a href="${a.link}">${a.name}</a>`).join(', ')}</li>
-                                <li class="list-group-item"><b>Score:</b> ⭐${data.score}</li>
+                              <li class="list-group-item">
+                                <img class="img-li" src="${data.thumb}">
+                                <b>Judul:</b> ${data.title ? data.title : 'Invalid Name'}
+                              </li>
+                              <li class="list-group-item">
+                                <b>Alternatif:</b> ${data.alter.length > 1 ? data.alter.join(', ') : data.alter}
+                              </li>
+                              <li class="list-group-item">
+                                <b>Status:</b> ${data.status}
+                              </li>
+                              <li class="list-group-item">
+                                <b>Pengarang:</b> ${data.pengarang.map(a => `<a href="${a.link}">${a.name}</a>`).join(', ')}
+                              </li>
+                              <li class="list-group-item">
+                                <b>Ilustrator:</b> ${data.illustrator.map(a => `<a href="${a.link}">${a.name}</a>`).join(', ')}
+                              </li>
+                              <li class="list-group-item">
+                                <b>Genre:</b> ${data.genre.map(a => `<a href="${a.link}">${a.name}</a>`).join(', ')}
+                              </li>
+                              <li class="list-group-item">
+                                <b>Score:</b> ⭐${data.score}
+                              </li>
                             </ul>
                         </div>
                     </div>
