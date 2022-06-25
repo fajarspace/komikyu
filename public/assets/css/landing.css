@@ -38,7 +38,7 @@
 }
 .modal .modal-body .container-fluid {
   overflow-y: auto;
-  width: 100%;
+  width: 80%;
   margin: 5%auto;
 }
 .darkmode .modal .modal-content {
@@ -49,6 +49,9 @@
 }
 @media only screen and (max-width: 767px){
 
+  .modal .modal-body .container-fluid {
+    width: 100%;
+  }
   .modal .modal-body img.img-fluid {
     display: none;
   }
