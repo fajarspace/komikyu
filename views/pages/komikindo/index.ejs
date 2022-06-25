@@ -59,7 +59,7 @@
 <div>
   <h2 class="title">Popular</h2>
   <% sidebar.popular.forEach(a=> { %>
-    <div  class="card-items">
+    <div class="card-items">
       <img src="<%= a.thumb %>" alt="">
       <a class="boxes see-detail" href="#" data-toggle="modal"
       data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
@@ -71,6 +71,21 @@
       </a>
       </div>
     <% }) %>
+    <br>
+    <h2 class="title">New</h2>
+    <% sidebar.new_komik.forEach(a=> { %>
+      <div  class="card-items">
+        <img src="<%= a.thumb %>" alt="">
+        <a class="boxes see-detail" href="#" data-toggle="modal"
+        data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+        data-target="#exampleModal">
+        <p>
+          <%= a.name %> <br>
+          <i class="fa-solid fa-star"></i> <%= a.score %>
+        </p>
+        </a>
+        </div>
+      <% }) %>
 </div>
 <!-- SIDEBAR -->
 <!-- SIDEBAR -->
