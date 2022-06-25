@@ -1,6 +1,10 @@
 .swiper{
   width: 100%;
+}
 
+img {
+
+ object-fit: contain
 }
 
 .swiper-slide {

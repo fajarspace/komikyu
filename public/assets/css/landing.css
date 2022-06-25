@@ -47,6 +47,7 @@
 .modal .modal-body img.img-li {
   display: none;
 }
+
 @media only screen and (max-width: 767px){
 
   .modal .modal-body .container-fluid {
