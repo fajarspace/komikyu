@@ -69,20 +69,21 @@
       <a class="boxes see-detail" href="#" data-toggle="modal"
       data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
       data-target="#exampleModal">
-      <p>
+      <p class="text-overflow">
         <%= a.name %> <br>
         <i class="fa-solid fa-star"></i> <%= a.score %>
       </p>
       </a>
       </div>
     <% }) %>
+    <h2 class="title">New Publish</h2>
     <% sidebar.new_komik.forEach(a=> { %>
-      <div  class="card-items">
+      <div class="card-items">
         <img src="<%= a.thumb %>" alt="">
         <a class="boxes see-detail" href="#" data-toggle="modal"
         data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
         data-target="#exampleModal">
-        <p>
+        <p class="text-overflow">
           <%= a.name %> <br>
           <i class="fa-solid fa-star"></i> <%= a.score %>
         </p>
@@ -108,7 +109,7 @@
         <a class="boxes see-detail" href="#" data-toggle="modal"
         data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
         data-target="#exampleModal">
-           <p>
+           <p class="text-overflow">
               <%= a.name %> <br>
               <span class="badge badge-pill badge-primary" >
                 <%= a.last_upload %>
@@ -124,7 +125,7 @@
           <a class="boxes see-detail" href="#" data-toggle="modal"
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
           data-target="#exampleModal">
-          <p>
+          <p class="text-overflow">
             <%= a.name %> <br>
             <span class="badge badge-pill badge-primary" >
               <%= a.last_upload %>

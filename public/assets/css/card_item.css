@@ -1,6 +1,11 @@
-.sidebar{
 
-}
+  .text-overflow {
+    white-space: nowrap;
+    width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
 .card-items{
     margin: 10px auto;
     display: flex;
