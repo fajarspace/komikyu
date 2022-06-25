@@ -1,3 +1,6 @@
+.sidebar{
+
+}
 .card-items{
     margin: 10px auto;
     display: flex;
@@ -7,6 +10,7 @@
     /*box-shadow: 4px 4px 6px #cecece;*/
     box-shadow: 0 3px 8px 3px lightgrey, 0 6px 20px 0 #EEEEEE;
 }
+
 .darkmode .card-items {
   color: rgb(227, 227, 227);
 	background: rgb(57, 57, 57);
