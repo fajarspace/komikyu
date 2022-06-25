@@ -5,6 +5,7 @@
 
 .swiper-slide {
   height: auto;
+  margin-top: 3px;
   background-color: #eee;
   text-align: center;
   font-size: 18px;

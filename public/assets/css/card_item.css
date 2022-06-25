@@ -49,7 +49,7 @@
 
 @media screen and (max-width: 430px) {
 	.title{
-    margin-top: 40px
+    margin-top: 20px
   }
   .hidden-search{
     display: block;
