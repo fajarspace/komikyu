@@ -22,9 +22,20 @@
       loop: true,
       loopedSlides: 16,
       speed: 700,
-      autoplay: true,
-      autoplayDisableOnInteraction: true,
-      centeredSlides: true
+      autoplayDisableOnInteraction: false,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
 
     $(window).resize(function () {
