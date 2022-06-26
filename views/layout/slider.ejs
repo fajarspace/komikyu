@@ -7,8 +7,10 @@
               <% body.new_update.forEach(a=> { %>
               <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="0">
                 <!--data-swiper-autoplay это скорость autoplay для слайдов-->
+                <a class="see-detail" href="#" data-toggle="modal" data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+                    data-target="#exampleModal">
                 <img src="<%= a.thumb %>?w=236,h=345" class="ag-slide_img" alt="">
-
+                </a>
               </li>
               <% }) %>
             </ul>
