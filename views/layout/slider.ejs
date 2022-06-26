@@ -1,23 +1,16 @@
 
-<!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <% body.new_update.forEach(a=> { %>
-        <div class="swiper-slide">
-          <a class="see-detail" href="#" data-toggle="modal"
-              data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-              data-target="#exampleModal">
-              <div>
-                <img src="<%= a.thumb %>?w=236,h=345" >
-                <h2 class="title" ><%= a.name %></h2>
-              </div>
-            </a>
-        </div>
-        <% }) %>
-      </div>
-      <br>
-      <div class="next swiper-button-next"></div>
-      <div class="prev swiper-button-prev"></div>
-      <br>
-      <div class="swiper-pagination"></div>
-    </div>
+    <!-- Swiper -->
+
+        <section class="ag-slide-block">
+          <div class="swiper-container">
+            <ul class="swiper-wrapper ag-slide_list">
+              <% body.new_update.forEach(a=> { %>
+              <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="0">
+                <!--data-swiper-autoplay это скорость autoplay для слайдов-->
+                <img src="<%= a.thumb %>?w=236,h=345" class="ag-slide_img" alt="">
+
+              </li>
+              <% }) %>
+            </ul>
+          </div>
+        </section>
