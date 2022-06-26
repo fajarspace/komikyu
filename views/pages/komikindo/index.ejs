@@ -19,7 +19,7 @@
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
           data-target="#exampleModal">
           <div>
-            <img src="<%= a.thumb %>?w=236,h=345" >
+            <img src="<%= a.thumb %>?w=136,h=245">
             <div class="ket">
               <h2><%= a.name %></h2>
               <span class="badge badge-pill badge-primary" >
@@ -42,7 +42,7 @@
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
           data-target="#exampleModal">
           <div>
-            <img src="<%= a.thumb %>?w=236,h=345" >
+            <img src="<%= a.thumb %>?w=136,h=245">
             <div class="ket">
               <h2><%= a.name %></h2>
               <span class="badge badge-pill badge-primary" >
@@ -65,7 +65,7 @@
   <h2 class="title">Popular</h2>
   <% sidebar.popular.forEach(a=> { %>
     <div class="card-items">
-      <img src="<%= a.thumb %>?w=236,h=345" alt="">
+      <img src="<%= a.thumb %>?w=136,h=245" alt="">
       <a class="boxes see-detail" href="#" data-toggle="modal"
       data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
       data-target="#exampleModal">
@@ -79,7 +79,7 @@
     <h2 class="title">New Publish</h2>
     <% sidebar.new_komik.forEach(a=> { %>
       <div class="card-items">
-        <img src="<%= a.thumb %>?w=236,h=345" alt="">
+        <img src="<%= a.thumb %>?w=136,h=245" alt="">
         <a class="boxes see-detail" href="#" data-toggle="modal"
         data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
         data-target="#exampleModal">
@@ -121,7 +121,7 @@
       <h2 class="title">Komik Berwarna Terbaru</h2>
       <% body.colored_komik.forEach(a=> { %>
         <div class="card-items">
-          <img src="<%= a.thumb %>" alt="">
+          <img src="<%= a.thumb %>?w=136,h=245" alt="">
           <a class="boxes see-detail" href="#" data-toggle="modal"
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
           data-target="#exampleModal">
