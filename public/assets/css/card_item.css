@@ -1,7 +1,7 @@
 
   .text-overflow {
     white-space: nowrap;
-    width: 280px;
+    width: 260px;
     overflow: hidden;
     text-overflow: ellipsis;
   }

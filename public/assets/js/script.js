@@ -48,12 +48,12 @@ $('#mangas').on('click', '.see-detail', function () {
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="${data.thumb}" class="img-fluid" alt="...">
+                            <img src="${data.thumb}?w=236,h=345" class="img-fluid" alt="...">
                         </div>
                         <div class="col-md-8">
                             <ul class="list-group">
                               <li class="list-group-item">
-                                <img class="img-li" src="${data.thumb}">
+                                <img class="img-li" src="${data.thumb}?w=236,h=345">
                                 <b>Judul:</b> ${data.title ? data.title : 'Invalid Name'}
                               </li>
                               <li class="list-group-item">
