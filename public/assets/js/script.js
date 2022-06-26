@@ -28,7 +28,7 @@ $('#mangas').on('click', '.see-detail', function () {
     $('.modal-title').text('Sedang memuat..');
     $('.modal-body').html(`
         <div class="text-center">
-            <img width="300px" src="https://64.media.tumblr.com/8fee5fca4da6748d6b3c55a506579f8e/tumblr_oktnvzM5OK1sok2l9o2_500.gifv" class="rounded">
+            <h2>Loading 🥱</h2>
         </div>
     `);
 
