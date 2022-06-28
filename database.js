@@ -9,10 +9,6 @@ module.exports = {
                     case 'komikindo':
                         table = new db.table('komikindo');
                         break;
-
-                    case 'otakudesu':
-                        table = new db.table('otakudesu');
-                        break;
                 }
 
                 const is = table.get(key);
@@ -34,9 +30,6 @@ module.exports = {
                         table = new db.table('komikindo');
                         //typeof if data is array
                         if (!Array.isArray(data)) return reject('data must be array');
-                        break;
-                    case 'otakudesu':
-                        table = new db.table('otakudesu');
                         break;
                 }
 

@@ -56,6 +56,7 @@ const home = (req, res) => {
                         obj.body.new_update.push({
                             name: $(f).find('*[itemprop="url"]').attr('title').replace('Komik', '').trim(),
                             thumb: $(f).find('img').attr('src').split('?')[0],
+                            last_upload: $(f).find('.datech').text(),
                             link: {
                                 url: $(f).find('*[itemprop="url"]').attr('href'),
                                 endpoint: $(f).find('*[itemprop="url"]').attr('href').replace(baseURL, '')
