@@ -49,9 +49,10 @@ nav{
     right: 0;
     top: 0;
     height: 90px;
-    background: #eee;
-    box-shadow: 0 0 5px #cecece;
+    background: #0A4275;
+    box-shadow: 0 0 5px #0A4295;
     z-index: 999999999999;
+    color: white;
 }
 .nav-container{
     width: 80%;

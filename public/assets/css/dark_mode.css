@@ -232,3 +232,6 @@ body.darkmode a{
 .darkmode .footer-col a {
     color: #fff;
 }
+.darkmode .footer-section{
+  background: #393939 !important;
+}

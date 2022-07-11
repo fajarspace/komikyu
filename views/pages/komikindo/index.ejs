@@ -1,5 +1,5 @@
 <%- include('../../layout/header') %>
-<%- include('../../layout/slider') %>
+
 
 <!-- Return to Top -->
 <button onclick="topFunction()" id="myBtn" title="Go to top">
@@ -7,11 +7,13 @@
 </button>
 
 <main class="container-cart">
-
 <!-- DESKTOP -->
 <!-- DESKTOP -->
 <div class="wrapper-cart">
+  
   <div class="product-cart">
+    <%- include('../../layout/slider') %>
+    <br>
     <h3 class="title" >Popular Terbaru</h3>
     <div class="produk-list">
       <% body.recent_popular.forEach(a=> { %>
@@ -60,48 +62,13 @@
 <!-- DESKTOP -->
 <!-- DESKTOP -->
 
-<!-- SIDEBAR -->
-<!-- SIDEBAR -->
-<div class="sidebar" >
-  <h2 class="title">Popular</h2>
-  <% sidebar.popular.forEach(a=> { %>
-    <div class="card-items">
-      <img src="<%= a.thumb %>?w=66,h=75"" alt="">
-      <a class="boxes see-detail" href="#" data-toggle="modal"
-      data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-      data-target="#exampleModal">
-      <p class="text-overflow">
-        <%= a.name %> <br>
-        <i class="fa-solid fa-star"></i> <%= a.score %>
-      </p>
-      </a>
-      </div>
-    <% }) %>
-    <h2 class="title">New Publish</h2>
-    <% sidebar.new_komik.forEach(a=> { %>
-      <div class="card-items">
-        <img src="<%= a.thumb %>?w=66,h=75" alt="">
-        <a class="boxes see-detail" href="#" data-toggle="modal"
-        data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-        data-target="#exampleModal">
-        <p class="text-overflow">
-          <%= a.name %> <br>
-          <i class="fa-solid fa-star"></i> <%= a.score %>
-        </p>
-        </a>
-        </div>
-      <% }) %>
 
-</div>
-
-
-<!-- SIDEBAR -->
-<!-- SIDEBAR -->
 
 
 <!-- MOBILE -->
 <!-- DESKTOP HIDDEN -->
 <div class="hidden-new">
+  <%- include('../../layout/slider') %>
   <div class="card-items-body" >
     <h2 class="title">Popular Terbaru</h2>
     <% body.recent_popular.forEach(a=> { %>
@@ -139,6 +106,44 @@
 </div>
 <!-- MOBILE -->
 <!-- MOBILE -->
+
+<!-- SIDEBAR -->
+<!-- SIDEBAR -->
+<div class="sidebar" >
+  <h2 class="title">Popular</h2>
+  <% sidebar.popular.forEach(a=> { %>
+    <div class="card-items">
+      <img src="<%= a.thumb %>?w=66,h=75"" alt="">
+      <a class="boxes see-detail" href="#" data-toggle="modal"
+      data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+      data-target="#exampleModal">
+      <p class="text-overflow">
+        <%= a.name %> <br>
+        <i class="fa-solid fa-star"></i> <%= a.score %>
+      </p>
+      </a>
+      </div>
+    <% }) %>
+    <h2 class="title">New Publish</h2>
+    <% sidebar.new_komik.forEach(a=> { %>
+      <div class="card-items">
+        <img src="<%= a.thumb %>?w=66,h=75" alt="">
+        <a class="boxes see-detail" href="#" data-toggle="modal"
+        data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+        data-target="#exampleModal">
+        <p class="text-overflow">
+          <%= a.name %> <br>
+          <i class="fa-solid fa-star"></i> <%= a.score %>
+        </p>
+        </a>
+        </div>
+      <% }) %>
+
+</div>
+
+
+<!-- SIDEBAR -->
+<!-- SIDEBAR -->
 </main>
 
 

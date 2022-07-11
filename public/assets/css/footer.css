@@ -3,6 +3,7 @@
 
 
 /* footer */
+
 footer{
   position: relative;
     display: flex;
@@ -11,7 +12,7 @@ footer{
     left: 0;
     right: 0;
     min-height: 280px;
-    background-color: #fff;
+    background-color: #0a4275;
     box-shadow: 0 5px 8px 0 lightgrey, 0 6px 20px 0 #EEEEEE;
     z-index: 32;
 }

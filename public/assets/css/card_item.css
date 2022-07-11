@@ -62,3 +62,20 @@
     margin: 0% auto;
   }
 }
+@media screen and (max-width: 333px) {
+	.text-overflow {
+    width: 210px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+	.text-overflow {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 265px) {
+	.text-overflow {
+    width: 150px;
+  }
+}
+

@@ -1,6 +1,8 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -22,7 +24,7 @@
 }
 
 .modal {
-  padding: 0 !important; // override inline padding-right added from js
+  padding: 0 !important; 
 }
 .modal .modal-dialog {
   width: 100%;
@@ -63,7 +65,9 @@
 
   }
 }
-
+.sidebar{
+  padding-left: 10px;
+}
 
 /* Reset css */
 *{

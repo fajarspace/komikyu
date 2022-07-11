@@ -1,18 +1,22 @@
 
-    <!-- Swiper -->
 
-        <section class="ag-slide-block">
-          <div class="swiper-container">
-            <ul class="swiper-wrapper ag-slide_list">
-              <% body.new_update.forEach(a=> { %>
-              <li class="swiper-slide ag-slide_item" data-swiper-autoplay="1500" data-swiper-slide-index="0">
-                <!--data-swiper-autoplay это скорость autoplay для слайдов-->
-                <a class="see-detail" href="#" data-toggle="modal" data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
-                    data-target="#exampleModal">
-                <img src="<%= a.thumb %>?w=236,h=345" class="ag-slide_img" alt="">
-                </a>
-              </li>
-              <% }) %>
-            </ul>
-          </div>
-        </section>
+<!-- Swiper -->
+<div class="swiper mySwiper">
+  
+  <div class="swiper-wrapper">
+    <% body.new_update.forEach(a=> { %>
+    <div class="swiper-slide">
+      <img class="thumb-cover" src="<%= a.thumb %>?w=236,h=345" alt="">
+        <img class="thumb" src="<%= a.thumb %>?w=236,h=345" alt="">
+      <h5 class="thumb-title" ><%= a.name %></h5>
+    </div>
+    <% }) %>
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  
+</script>
