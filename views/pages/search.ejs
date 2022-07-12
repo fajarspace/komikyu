@@ -1,4 +1,4 @@
-<%- include('../../layout/header') %>
+<%- include('../layout/header') %>
 
 <div class="row" id="manga-list">
 
@@ -63,11 +63,11 @@
           </li>
           <% } else if (a.endpoint.includes('page')) {%>
             <li class='page-item'>
-              <a class='page-link text-dark' href="/id/cari/<%= a.endpoint %>"><%= a.name %></a>
+              <a class='page-link text-dark' href="/cari/<%= a.endpoint %>"><%= a.name %></a>
             </li>
           <% } else { %>
             <li class='page-item'>
-              <a class='page-link text-dark' href='/id/cari/<%= a.endpoint %>page/1'><%= a.name %></a>
+              <a class='page-link text-dark' href='/cari/<%= a.endpoint %>page/1'><%= a.name %></a>
               <hr>
             </li>
               <hr>
@@ -104,4 +104,4 @@ input.addEventListener("keypress", function(event) {
   }
 });
 </script>
-<%- include('../../layout/footer') %>
+<%- include('../layout/footer') %>

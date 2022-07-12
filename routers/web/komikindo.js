@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     try {
         const getKomik = await general.home(req, res);
 
-        res.render('pages/komikindo/index', getKomik.data);
+        res.render('pages/index', getKomik.data);
     } catch (err) {
         res.send(err);
     }
@@ -18,7 +18,7 @@ router.get('/chapter/:query', async (req, res) => {
     try {
         const getChapter = await chapter(req, res);
 
-        res.render('pages/komikindo/chapter', getChapter.data);
+        res.render('pages/chapter', getChapter.data);
     } catch (err) {
         res.send(err);
     }
@@ -28,7 +28,7 @@ router.get('/cari/:query/page/:pagination/', async (req, res) => {
     try {
         const getBySearch = await general.search(req, res);
 
-        res.render('pages/komikindo/search', getBySearch.data);
+        res.render('pages/search', getBySearch.data);
     } catch (err) {
         res.send(err);
     }
@@ -38,7 +38,7 @@ router.get('/komik/:type/page/:number', async (req, res) => {
     try {
         const getKomik = await general.komik(req, res);
 
-        res.render('pages/komikindo/smut', getKomik.data);
+        res.render('pages/smut', getKomik.data);
     } catch (err) {
         res.send(err);
     }

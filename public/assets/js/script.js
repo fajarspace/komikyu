@@ -1,20 +1,11 @@
 function getSearch(source) {
-    if (source === 'id') {
+    if (source === 'cari') {
         const value = $('#search-input').val();
-        const endpoint = `/${source}/cari/${value}/page/1/`;
+        const endpoint = `/${source}/${value}/page/1/`;
         const url = `${endpoint}`;
 
         window.location.href = url;
-    } else if (source === 'mangabat') {
-        const value = $('#search-input').val();
-        const endpoint = `/${source}/search/${value}/page/1/`
 
-        window.location.href = endpoint;
-    } else if (source === 'otakudesu') {
-        const value = $('#search-input').val();
-        const endpoint = `/${source}/search/${value}`;
-
-        window.location.href = endpoint;
     } else if (source === 'komiku') {
         const value = $('#search-input').val();
         const endpoint = `/komiku/search/${value}`;
@@ -114,7 +105,7 @@ function generateChapterList(array) {
                   ${a.name ? a.name : a.title}
                 </td>
                 <td>
-                  <a href="/${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" >
+                  <a href="${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" >
                     <button type="button" class="btn detail-button btn-sm btn-block">Baca</button>
                   </a>
                 </td>

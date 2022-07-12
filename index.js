@@ -13,11 +13,11 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 /** Web Path */
-app.get('/', (req, res) => {
+app.get('/', require('./routers/web/komikindo'), (req, res) => {
     res.render('pages/index');
 });
 
-app.use('/id', require('./routers/web/komikindo'));
+app.use('/', require('./routers/web/komikindo'));
 
 /* API Path */
 app.get('/api', (req, res) => {
