@@ -6,18 +6,18 @@
 <i class="fas fa-arrow-up"></i>
 </button>
 
-<main class="container-cart">
+<main class="container-main">
 <!-- DESKTOP -->
 <!-- DESKTOP -->
-<div class="wrapper-cart">
+<div class="wrapper-main">
   
-  <div class="product-cart">
+  <div class="main">
     <%- include('../layout/slider') %>
     <br>
     <h3 class="title" >Popular Terbaru</h3>
-    <div class="produk-list">
+    <div class="list-komik">
       <% body.recent_popular.forEach(a=> { %>
-    <div class="produk-box">
+    <div class="box-komik">
       <a class="see-detail" href="#" data-toggle="modal"
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
           data-target="#exampleModal">
@@ -35,12 +35,13 @@
     <% }) %>
     </div>
   </div>
+  
 <br>
-  <div class="product-cart">
+  <div class="main">
     <h3 class="title" >Komik berwarna Terbaru</h3>
-    <div class="produk-list">
+    <div class="list-komik">
       <% body.colored_komik.forEach(a=> { %>
-    <div class="produk-box">
+    <div class="box-komik">
       <a class="see-detail" href="#" data-toggle="modal"
           data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
           data-target="#exampleModal">
