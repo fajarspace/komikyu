@@ -34,7 +34,7 @@ app.use('/api/komikindo/chapter', require('./routers/api/komikindo/chapter'));
 
 app.use('*', async (req, res) => {
     res.status(404).send(
-      '<h1>404 NOT FOUND</h1> <img src="https://i.makeagif.com/media/5-04-2015/CUdjWj.gif" /> <br /><br /> <a href="/id">Kembali</a>'
+      '<h1>404 NOT FOUND</h1> <img src="https://i.makeagif.com/media/5-04-2015/CUdjWj.gif" /> <br /><br /> <a href="/">Kembali</a>'
     );
 });
 
