@@ -3,12 +3,12 @@
 ### Rest-API Docs
 [Click this](https://github.com/KatowProject/manga-reader/blob/master/rest-api/README.md)
 
-# Rest-API Documentation
-## Path
+### Rest-API Documentation
+### Path
 ```
 http://localhost:4873/api
 ```
-## Account
+### Account
 ### **Auth**
 ```
 METHOD: POST
@@ -18,7 +18,7 @@ BODY: {
         password: 'password'
       }
 ```
-## **Favorite**
+### **Favorite**
 ```
 METHOD: POST
 PATH: /account/favorit
