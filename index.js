@@ -18,6 +18,7 @@ app.get('/', require('./routers/web/komikindo'), (req, res) => {
 });
 
 app.use('/', require('./routers/web/komikindo'));
+app.use('/komik', require('./routers/web/komikindo'));
 
 /* API Path */
 app.get('/api', (req, res) => {

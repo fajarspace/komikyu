@@ -1,7 +1,7 @@
 function getSearch(source) {
-    if (source === 'cari') {
+    if (source === '/') {
         const value = $('#search-input').val();
-        const endpoint = `/${source}/${value}/page/1/`;
+        const endpoint = `${source}cari/${value}/page/1/`;
         const url = `${endpoint}`;
 
         window.location.href = url;
@@ -105,12 +105,12 @@ function generateChapterList(array) {
                   ${a.name ? a.name : a.title}
                 </td>
                 <td>
-                  <a href="${firstPath}/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" >
+                  <a href="/chapter/${a.link.endpoint ? a.link.endpoint : a.endpoint}" >
                     <button type="button" class="btn detail-button btn-sm btn-block">Baca</button>
                   </a>
                 </td>
                 <td>
-                  <a href="/${firstPath}/download/${a.link.endpoint ? a.link.endpoint : a.endpoint}pdf">
+                  <a href="/download/${a.link.endpoint ? a.link.endpoint : a.endpoint}pdf">
                     <button type="button" class="btn btn-success btn-sm btn-block">
                     <i class="fa fa-download"></i></button>
                   </a>
