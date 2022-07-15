@@ -2,12 +2,12 @@
 
 <div class="row" id="manga-list">
 
-  <div class="wrapper-main">
-    <div class="main">
+  <div class="wrapper-cart">
+    <div class="product-cart">
       <br>
-      <div class="list-komik">
+      <div class="produk-list">
         <% manga.forEach(a=> { %>
-      <div class="box-komik">
+      <div class="produk-box">
         <a class="see-detail" href="#" data-toggle="modal"
             data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
             data-target="#exampleModal">
@@ -63,11 +63,11 @@
           </li>
           <% } else if (a.endpoint.includes('page')) {%>
             <li class='page-item'>
-              <a class='page-link text-dark' href="/cari/<%= a.endpoint %>"><%= a.name %></a>
+              <a class='page-link text-dark' href="/id/cari/<%= a.endpoint %>"><%= a.name %></a>
             </li>
           <% } else { %>
             <li class='page-item'>
-              <a class='page-link text-dark' href='/cari/<%= a.endpoint %>page/1'><%= a.name %></a>
+              <a class='page-link text-dark' href='/id/cari/<%= a.endpoint %>page/1'><%= a.name %></a>
               <hr>
             </li>
               <hr>

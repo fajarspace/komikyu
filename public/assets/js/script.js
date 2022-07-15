@@ -5,7 +5,16 @@ function getSearch(source) {
         const url = `${endpoint}`;
 
         window.location.href = url;
+    } else if (source === 'mangabat') {
+        const value = $('#search-input').val();
+        const endpoint = `/${source}/search/${value}/page/1/`
 
+        window.location.href = endpoint;
+    } else if (source === 'otakudesu') {
+        const value = $('#search-input').val();
+        const endpoint = `/${source}/search/${value}`;
+
+        window.location.href = endpoint;
     } else if (source === 'komiku') {
         const value = $('#search-input').val();
         const endpoint = `/komiku/search/${value}`;
