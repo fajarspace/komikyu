@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "mkdir -p dist && cp -R /* dist/",
+    "build": "webpack --config webpack.config.js",
     "pug": "node node_modules/pug-cli/index.js views/ --out ./"
   },
   "author": "fajarspace",
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "netlify-cli": "^10.9.0"
+    "netlify-cli": "^10.9.0",
+    "webpack": "^5.73.0"
   }
 }
