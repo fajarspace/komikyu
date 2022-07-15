@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "build": "mkdir -p dist && cp -R ./* public/",
+    "build": "mkdir -p public && cp -R ./* public/",
     "pug": "node node_modules/pug-cli/index.js views/ --out ./"
   },
   "author": "fajarspace",
