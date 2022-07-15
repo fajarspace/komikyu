@@ -1,4 +1,5 @@
 {
+  "homepage": "https://komikyu.site/",
   "name": "Santoryu",
   "version": "1.0.0",
   "description": "",
@@ -6,11 +7,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
+    "build": "mkdir -p dist && cp -R ./* public/",
     "pug": "node node_modules/pug-cli/index.js views/ --out ./"
   },
   "author": "fajarspace",
   "license": "MIT",
   "dependencies": {
+    "@netlify/build": "^27.4.0",
     "axios": "^0.25.0",
     "cheerio": "^1.0.0-rc.10",
     "cors": "^2.8.5",
