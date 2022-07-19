@@ -14,13 +14,13 @@
     background-color: #fff;
     border-radius: 8px;
     /*box-shadow: 4px 4px 6px #cecece;*/
-    box-shadow: 0 3px 8px 3px lightgrey, 0 6px 20px 0 #EEEEEE;
+
 }
 
 .darkmode .card-items {
   color: rgb(227, 227, 227);
 	background: rgb(57, 57, 57);
-	box-shadow: 0 4px 8px 0 #282828, 0 6px 20px 0 rgb(57, 57, 57);
+
 }
 .darkmode .card-items > .title{
 	color: rgb(227, 227, 227);
