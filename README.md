@@ -1,4 +1,4 @@
-# Santoryu Manga reader
+# KomiKyu Manga reader
 
 ## Rest-API Installation
 1. Require Node.js 14.x.x;
