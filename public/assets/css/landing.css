@@ -1,6 +1,12 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+
+
+nav{
+  background-color: #FFFFFF;
+}
+
 .modal {
   padding: 0 !important; 
 }
@@ -196,13 +202,6 @@ div.wrapper {
 }
 
 
-
-.header-produk h1{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #E88D2F;
-}
 .komik-list{
     display: flex;
     justify-content: center;

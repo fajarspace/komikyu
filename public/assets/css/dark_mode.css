@@ -27,7 +27,10 @@ body.darkmode a{
 #theme:hover {
   cursor: pointer;
 }
-
+.darkmode nav{
+  background-color: #282828;
+  color: white;
+}
 .darkmode .modal-title,
 .darkmode .modal-body,
 .darkmode .modal-header{
