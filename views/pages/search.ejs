@@ -1,0 +1,107 @@
+<%- include('../layout/header') %>
+
+<div class="row" id="manga-list">
+
+  <div class="wrapper">
+    <div class="komik">
+      <br>
+      <div class="komik-list">
+        <% manga.forEach(a=> { %>
+      <div class="komik-box">
+        <a class="see-detail" href="#" data-toggle="modal"
+            data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+            data-target="#exampleModal">
+            <div>
+              <img src="<%= a.thumb %>?w=136,h=245" >
+              <div class="ket">
+                <h2><%= a.title %></h2>
+               <center><button style="width:100%;" class="btn align-center detail-button">Detail</button></center>
+              </div>
+            </div>
+          </a>
+      </div>
+      <% }) %>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MOBILE -->
+  <!-- DESKTOP HIDDEN -->
+  <div class="hidden-search">
+    <div class="card-items-body" >
+      <h2 class="title">Daftar pencarian :</h2>
+      <% manga.forEach(a=> { %>
+        <div class="card-items">
+        <a class="boxes see-detail" href="#" data-toggle="modal"
+          data-source="komikindo" data-endpoint=<%=a.link.endpoint %>
+          data-target="#exampleModal">
+          <img src="<%= a.thumb %>?w=66,h=75" alt="">
+          <p class="text-overflow" >
+            <%= a.title %>
+          </p>
+          </a>
+        </div>
+        <% }) %>
+    </div>
+  </div>
+  <!-- MOBILE -->
+  <!-- MOBILE -->
+
+
+
+
+
+<div class="col-md-12">
+  <hr>
+    <div aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+          <% pagination.forEach(a=> { %>
+          <% if (a.url==null && a.endpoint==null) { %>
+          <li class='page-item active'>
+            <a class='page-link bg-dark text-white'><%= a.name %></a>
+          </li>
+          <% } else if (a.endpoint.includes('page')) {%>
+            <li class='page-item'>
+              <a class='page-link text-dark' href="/id/cari/<%= a.endpoint %>"><%= a.name %></a>
+            </li>
+          <% } else { %>
+            <li class='page-item'>
+              <a class='page-link text-dark' href='/id/cari/<%= a.endpoint %>page/1'><%= a.name %></a>
+              <hr>
+            </li>
+              <hr>
+          <% } %>
+          <% }) %>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+var input = document.getElementById("search-input");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myButton").click();
+  }
+});
+</script>
+<%- include('../layout/footer') %>

@@ -1,0 +1,114 @@
+
+.darkmode .title {
+    color: black;
+    background-color: white;
+}
+.darkmode .sidebar{
+
+  background: #393939;
+}
+.darkmode hr{
+  background-color: grey;
+}
+body.darkmode {
+    background: rgb(40, 40, 40);
+    color: rgb(227, 227, 227);
+}
+
+body.darkmode a{
+    color: rgb(227, 227, 227);
+}
+.is-hidden{
+    display: none;
+}
+#theme {
+  font-size: 20px;
+}
+#theme:hover {
+  cursor: pointer;
+}
+.darkmode nav{
+  background-color: #282828;
+  color: white;
+}
+.darkmode .modal-title,
+.darkmode .modal-body,
+.darkmode .modal-header{
+  color: rgb(227, 227, 227);
+  background: #393939;
+}
+.darkmode .container-fluid {
+  color: rgb(227, 227, 227);
+  background: #393939;
+}
+.darkmode .container-fluid ul li {
+  border: 1px solid grey;
+  color: rgb(227, 227, 227);
+  background: #393939;
+}
+.darkmode .container-fluid .row table tbody {
+  color: rgb(227, 227, 227);
+  border: 1px solid grey;
+}
+.darkmode .container-fluid ul li {
+  color: rgb(227, 227, 227);
+  background: #393939;
+}
+.darkmode button.close {
+  color: rgb(227, 227, 227);
+}
+
+.darkmode nav{
+	background: rgb(57, 57, 57);
+	box-shadow: 0 0 5px #282828;
+}
+
+
+.darkmode .komik-box{
+	color: rgb(227, 227, 227);
+	background: rgb(57, 57, 57);
+  box-shadow: 0 4px 8px 0 #282828, 0 6px 20px 0 rgb(57, 57, 57);
+}
+.darkmode .komik-box h2{
+	color: rgb(227, 227, 227);
+}
+.darkmode .komik-box h3{
+	color: #ffffff;
+}
+.darkmode .komik-box a:hover {
+	box-shadow: 0 3px 8px 3px rgb(30, 30, 30), 0 6px 20px 0 rgb(40, 40, 40);
+}
+
+
+/* FOOTER */
+/* FOOTER */
+.darkmode footer{
+  background: rgb(57, 57, 57);
+	box-shadow: 0 0 5px #282828;
+
+}
+.darkmode .footer-section h3{
+	color: white
+}
+/*.darkmode .footer-section div{
+    background: #A91079;
+}
+.darkmode .footer-section div:hover {
+    color: #A91079;
+    background-color: #282828;
+    box-shadow: 0 0 5px #282828;
+}*/
+.darkmode .footer-section:nth-last-child(1){
+    background: #A91079;
+    color: #fff;
+
+}
+.darkmode .footer-row {
+    background: #A91079;
+}
+.darkmode .footer-col a {
+    color: #fff;
+}
+.darkmode .footer-section{
+  background: #393939 !important;
+}

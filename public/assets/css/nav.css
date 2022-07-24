@@ -1,0 +1,91 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.line{
+  border-left: 3px solid lightgrey;
+  height: 50px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid #0A4275;
+  border-right: none;
+  padding: 16px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #eee;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 50px;
+  height: 36px;
+  border: 1px solid #0A4275;
+  background: #0A4275;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+/* Navbar */
+nav{
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 90px;
+    background: #0A4275;
+    box-shadow: 0 0 5px #0A4295;
+    z-index: 999999999999;
+    color: white;
+}
+.nav-container{
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logonav{
+  font-size: 1.8em;
+  text-decoration: none;
+}
+a.logonav1{
+  font-size: 1.8em;
+  text-decoration: none;
+}
+.logo div img{
+    width: 100px;
+    height: 50px;
+    font-size: 100px
+}
+
+
+@media only screen and (max-width: 768px){
+    .logonav{
+      display: none;
+    }
+    .nav-container{
+        justify-content: space-between;
+        padding: 0 20px 0 20px;
+        width: 100%;
+    }
+}

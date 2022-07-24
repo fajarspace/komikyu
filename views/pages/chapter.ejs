@@ -1,0 +1,102 @@
+<%- include('../layout/header') %>
+
+<div class="row mt-4 justify-content-center">
+    <h2 class="text-center">
+        <%= chapter_name %>
+    </h2>
+</div>
+<script>
+    document.title = "<%= chapter_name %>";
+</script>
+
+<!-- Return to Top 
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+<i class="fas fa-arrow-up"></i>
+</button>-->
+
+<div class="row">
+    <div class="col">
+        <div class="row flex justify-content-between">
+            <div class="col btn-group btn-group-toggle btn-group-lg ">
+                <% if (chapter.previous !=null) { %>
+                    <a href='/chapter<%=chapter.previous%>' class='btn detail-button'>Previous</a>
+                <% } else { %>
+                    <a href='#' class='btn btn-outline-secondary disabled'>Previous</a>
+                <%}%>
+            </div>
+            <div class="col btn-group btn-group-toggle btn-group-lg ">
+                <% if (chapter.next !=null) { %>
+                    <a href='/chapter<%=chapter.next%>'
+                        class='btn detail-button'>Next</a>
+                <% } else { %>
+                    <a href='#' class='btn btn-outline-secondary disabled'>Next</a>
+                <%}%>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<div class="row mt-4 justify-content-center">
+    <% chapter_images.forEach(a=> { %>
+      <img src='<%= a %>?w=236,h=345' class='img-fluid' alt='Responsive image'>
+    <% }) %>
+</div>
+
+<div class="row mt-4">
+    <div class="col">
+        <div class="row flex justify-content-between">
+            <div class="col btn-group btn-group-toggle btn-group-lg ">
+                <% if (chapter.previous !=null) { %>
+                    <a href='/chapter<%=chapter.previous%>' class='btn detail-button'>Previous</a>
+                <% } else { %>
+                    <a href='#' class='btn btn-outline-secondary disabled'>Previous</a>
+                <%}%>
+            </div>
+            <div class="col btn-group btn-group-toggle btn-group-lg ">
+                <% if (chapter.next !=null) { %>
+                    <a href='/chapter<%=chapter.next%>'
+                        class='btn detail-button'>Next</a>
+                <% } else { %>
+                    <a href='#' class='btn btn-outline-secondary disabled'>Next</a>
+                <%}%>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://santoryu.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<br/>
+<script src="/assets/js/return_to_top.js"></script>
+<script>
+var input = document.getElementById("search-input");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("myButton").click();
+  }
+});
+</script>
+
+
+<%- include('../layout/footer') %>
