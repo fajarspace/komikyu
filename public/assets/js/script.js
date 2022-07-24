@@ -131,7 +131,6 @@ function generateChapterList(array) {
     return temp;
 };
 
-
 /* Add Favorite */
 $('.favorite').on('click', async function () {
     const cookie = document.cookie.split(';');

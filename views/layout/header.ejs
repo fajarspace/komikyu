@@ -24,13 +24,17 @@
     <link rel="stylesheet" href="/assets/css/komik_slider.css">
     <link rel="stylesheet" href="/assets/css/return_to_top.css">
     <link rel="icon" href="/assets/image/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>KomiKyu - Baca Manga/Manhwa bahasa Indonesia</title>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-  <!-- Image and text -->
+  <!--div id="preloader">
+    <div class="lds-dual-ring"></div>
+  </div-->
+
 <nav class="navbar">
   <a class="navbar-brand" href="#">
     <img src="/assets/image/komikyu.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -42,12 +46,21 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <i class="fa-solid fa-arrow-up"></i>
       </button>
-      <a onClick="window.location.reload();"><i class="fa-solid fa-rotate-right"></i>
+
+      <a onClick="window.location.reload();">
+        <center><div class="btnn" >
+          <i class="fa-solid fa-rotate-right"></i>
+        </div></center>
         <div class="text-icon" >Refresh</div>
       </a>
-    <a href="/"><i class="fa-solid fa-house"></i>
-      <div class="text-icon" >Home</div>
-    </a>
+
+      <a href="/">
+        <center><div class="btnn" >
+          <i class="fa-solid fa-house"></i>
+        </div></center>
+        <div class="text-icon" >Home</div>
+      </a>
+
     <div id=theme>
       <div onclick=setDarkMode(true) id=darkBtn>
           <i class="fa-solid fa-moon"></i>

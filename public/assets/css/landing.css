@@ -1,7 +1,73 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+button .btnn:hover {
+  background: #8883a5;
+  color: white;
+}
+.btnn:hover {
+  background: #8883a5;
+  color: white;
+}
+.loading {
+  align-items: center;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 2px solid #aba8af;
+  border-top-color: #4c2f80;
+  user-select: none;
+  font-size: 0;
+  outline: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  animation: rotate 0.8s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+ }
+  100% {
+    transform: rotate(360deg);
+ }
+}
 
+#preloader{
+  background-color: #000;
+  opacity: 0.6;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.lds-dual-ring {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 0;
+  bottom: 0;
+  left: 10;
+  right: 0;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 nav{
   background-color: #FFFFFF;
@@ -52,6 +118,7 @@ nav{
 }
 
 
+
 .sidebar{
   margin-left: 10px;
   background-color: white;
@@ -62,6 +129,9 @@ nav{
   margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background-color: #f8f8f8;
