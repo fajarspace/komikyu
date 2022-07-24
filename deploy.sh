@@ -15,6 +15,4 @@ git commit -m "$msg"
 
 git push origin mobile
 
-git push heroku mobile
-
 cd ..
