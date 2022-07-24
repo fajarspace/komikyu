@@ -31,6 +31,9 @@ body.darkmode a{
   background-color: #282828;
   color: white;
 }
+.darkmode .ebcf_modal-content {
+  background-color:#282828 ;
+}
 .darkmode .modal-title,
 .darkmode .modal-body,
 .darkmode .modal-header{
