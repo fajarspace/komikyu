@@ -1,10 +1,10 @@
 #myBtn {
   border: none;
   outline: none;
-  background-color: #0181ff;
+  background-color: #07355D;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 8px;
   border-radius: 4px;
 }
 #myBtn i{
