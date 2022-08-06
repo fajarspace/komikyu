@@ -1,14 +1,14 @@
 /* Import Font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-button .btnn:hover {
+/*button .btnn:hover {
   background: #8883a5;
   color: white;
 }
 .btnn:hover {
   background: #8883a5;
   color: white;
-}
+}*/
 .loading {
   align-items: center;
   transform: translate(-50%, -50%);
